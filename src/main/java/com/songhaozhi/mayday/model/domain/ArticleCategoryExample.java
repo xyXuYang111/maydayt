@@ -1,9 +1,13 @@
 package com.songhaozhi.mayday.model.domain;
 
+import lombok.Data;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
-public class ArticleCategoryExample {
+@Data
+public class ArticleCategoryExample implements Serializable {
+	private static final long serialVersionUID = 1180380103774665054L;
 	protected String orderByClause;
 
 	protected boolean distinct;

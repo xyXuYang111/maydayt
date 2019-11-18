@@ -1,6 +1,9 @@
 package com.songhaozhi.mayday.model.domain;
 
-public class ArticleTag {
+import java.io.Serializable;
+
+public class ArticleTag implements Serializable {
+	private static final long serialVersionUID = -6373746878318423897L;
 	private Integer articleId;
 
 	private Long tagId;

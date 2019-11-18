@@ -16,10 +16,10 @@ spring:
     cache: false
   datasource: 
          type: com.alibaba.druid.pool.DruidDataSource
-         url: jdbc:mysql://localhost:3306/maydaytest?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
-         username: maydaytest
-         password: C36J4EajMepPEdTC
-         driver-class-name: com.mysql.jdbc.Driver
+         url: jdbc:mysql://localhost:3306/maydaytest?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=UTC
+         username: root
+         password: 1234qwer
+         driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis: 
   typeAliasesPackage: com.songhaozhi.mayday.model.domain
   mapperLocations: classpath:mapper/*/*.xml

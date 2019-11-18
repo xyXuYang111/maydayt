@@ -1,10 +1,12 @@
 package com.songhaozhi.mayday.model.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class LogExample {
+public class LogExample implements Serializable {
+	private static final long serialVersionUID = -2854410824392220917L;
 	protected String orderByClause;
 
 	protected boolean distinct;

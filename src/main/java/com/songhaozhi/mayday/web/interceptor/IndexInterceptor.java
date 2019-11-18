@@ -3,6 +3,10 @@ package com.songhaozhi.mayday.web.interceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.songhaozhi.mayday.model.domain.Url;
+import com.songhaozhi.mayday.redis.RedisService;
+import com.songhaozhi.mayday.util.DateUtil;
+import com.songhaozhi.mayday.util.IpUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -19,12 +23,37 @@ import com.songhaozhi.mayday.util.Commons;
  */
 @Component
 public class IndexInterceptor implements HandlerInterceptor {
+
 	@Autowired
 	private Commons commons;
+
+	@Autowired
+	private RedisService redisService;
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
+
+		//获取ip地址
+		String ip = IpUtil.getIpAddress(request);
+		String uri = request.getRequestURI();//返回请求行中的资源名称
+		String url = request.getRequestURL().toString();//获得客户端发送请求的完整url
+		String returnIp = request.getRemoteAddr();//返回发出请求的IP地址
+		String params = request.getQueryString();//返回请求行中的参数部分
+		String host=request.getRemoteHost();//返回发出请求的客户机的主机名
+		int port =request.getRemotePort();//返回发出请求的客户机的端口号。
+
+		Url urlInfo = new Url();
+		urlInfo.setIp(ip);
+		urlInfo.setUri(uri);
+		urlInfo.setUrl(url);
+		urlInfo.setReturnIp(returnIp);
+		urlInfo.setParams(params);
+		urlInfo.setHost(host);
+		urlInfo.setPort(port);
+		urlInfo.setOperateTime(DateUtil.getNowTime());
+		redisService.put("REQUEST", String.valueOf(System.currentTimeMillis()), urlInfo);
+
 		return true;
 	}
 

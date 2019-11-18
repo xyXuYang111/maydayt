@@ -1,8 +1,10 @@
 package com.songhaozhi.mayday.model.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Log {
+public class Log implements Serializable {
+	private static final long serialVersionUID = -4450058977936393654L;
 	private Integer logId;
 
 	private String logTitle;

@@ -1,9 +1,11 @@
 package com.songhaozhi.mayday.model.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OptionsExample {
+public class OptionsExample implements Serializable {
+	private static final long serialVersionUID = 90393206149504491L;
 	protected String orderByClause;
 
 	protected boolean distinct;

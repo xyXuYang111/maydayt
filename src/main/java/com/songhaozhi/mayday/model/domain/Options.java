@@ -1,6 +1,9 @@
 package com.songhaozhi.mayday.model.domain;
 
-public class Options {
+import java.io.Serializable;
+
+public class Options implements Serializable {
+	private static final long serialVersionUID = 9106758767364963417L;
 	private String optionName;
 
 	private String optionValue;

@@ -1,8 +1,10 @@
 package com.songhaozhi.mayday.model.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Theme {
+public class Theme implements Serializable {
+	private static final long serialVersionUID = 2744129390144522764L;
 	private Integer id;
 
 	private String themeName;

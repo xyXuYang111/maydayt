@@ -1,10 +1,12 @@
 package com.songhaozhi.mayday.model.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ThemeExample {
+public class ThemeExample implements Serializable {
+	private static final long serialVersionUID = -9002642102590671542L;
 	protected String orderByClause;
 
 	protected boolean distinct;

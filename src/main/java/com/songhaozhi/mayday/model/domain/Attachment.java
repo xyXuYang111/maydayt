@@ -1,8 +1,9 @@
 package com.songhaozhi.mayday.model.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Attachment {
+public class Attachment implements Serializable {
 	private Integer id;
 	/**
 	 * 图片名称

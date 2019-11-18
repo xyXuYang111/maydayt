@@ -1,6 +1,9 @@
 package com.songhaozhi.mayday.model.domain;
 
-public class Menu {
+import java.io.Serializable;
+
+public class Menu implements Serializable {
+	private static final long serialVersionUID = -5116383435495782930L;
 	private Integer menuId;
 
 	private String menuIcon;
