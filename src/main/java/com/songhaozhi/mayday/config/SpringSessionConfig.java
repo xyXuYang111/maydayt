@@ -32,7 +32,7 @@ public class SpringSessionConfig {
      */
     private int maxInactiveIntervalInSeconds = 1800;
 
-    private String host = "192.168.133.131";
+    private String host = "127.0.0.1";
 
     private int port = 6379;
 
