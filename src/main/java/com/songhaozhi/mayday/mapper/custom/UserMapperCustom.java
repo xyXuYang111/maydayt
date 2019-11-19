@@ -24,6 +24,15 @@ public interface UserMapperCustom {
 	User getByNameAndPwd(@Param(value = "name") String name, @Param(value = "pwd") String pwd);
 
 	/**
+	 * 根据用户名和密码查询用户
+	 *
+	 * @param userId
+	 *            用户名
+	 * @return 根据用户名和密码获取用户信息
+	 */
+	User getUserInfo(@Param(value = "userId") String userId);
+
+	/**
 	 * 修改用户资料
 	 * 
 	 * @param user

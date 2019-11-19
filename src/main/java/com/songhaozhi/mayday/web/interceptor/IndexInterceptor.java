@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.songhaozhi.mayday.model.domain.Url;
+import com.songhaozhi.mayday.model.domain.User;
 import com.songhaozhi.mayday.redis.RedisService;
 import com.songhaozhi.mayday.util.DateUtil;
 import com.songhaozhi.mayday.util.IpUtil;
@@ -53,6 +54,14 @@ public class IndexInterceptor implements HandlerInterceptor {
 		urlInfo.setPort(port);
 		urlInfo.setOperateTime(DateUtil.getNowTime());
 		redisService.put("REQUEST", String.valueOf(System.currentTimeMillis()), urlInfo);
+
+		//更新redis中的session记录
+		User user = (User) request.getSession().getAttribute(MaydayConst.USER_SESSION_KEY);
+		if(user != null){
+			redisService.set(String.valueOf(user.getUserId()), request.getSession().getId(), MaydayConst.SESSION_TIME_OUT);
+
+			redisService.set(request.getSession().getId(), String.valueOf(user.getUserId()), MaydayConst.SESSION_TIME_OUT);
+		}
 
 		return true;
 	}
