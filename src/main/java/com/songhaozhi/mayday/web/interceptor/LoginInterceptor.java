@@ -31,8 +31,10 @@ public class LoginInterceptor implements HandlerInterceptor {
 			throws Exception {
 
 		//redis托管
-		Integer userID = (Integer) redisService.get(request.getSession().getId());
-		if(userID != null){
+		String userInt = (String)redisService.get(request.getSession().getId());
+		if(userInt != null){
+
+			int userID = Integer.valueOf(userInt);
 
 			User user = (User) request.getSession().getAttribute(MaydayConst.USER_SESSION_KEY);
 			// 如果user不为空则放行
