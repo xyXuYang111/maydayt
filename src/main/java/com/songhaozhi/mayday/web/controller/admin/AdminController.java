@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.songhaozhi.mayday.redis.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -51,6 +52,8 @@ public class AdminController extends BaseController {
 	private LinksService linksService;
 	@Autowired
 	private AttachmentService attachmentService;
+	@Autowired
+	private RedisService redisService;
 
 	/**
 	 * 后台首页
@@ -98,6 +101,21 @@ public class AdminController extends BaseController {
 	}
 
 	/**
+	 * 注册
+	 *
+	 * @param session
+	 * @return
+	 */
+	@RequestMapping(value = "/add")
+	public String add(HttpSession session, Model model) {
+		User user = (User) session.getAttribute(MaydayConst.USER_SESSION_KEY);
+		if (user != null) {
+			return "redirect:/admin";
+		}
+		return "add";
+	}
+
+	/**
 	 * 验证
 	 * 
 	 * @param userName
@@ -136,6 +154,7 @@ public class AdminController extends BaseController {
 			userService.updateLoginLastTime(DateUtil.date(), users.getUserId());
 			if (user != null) {
 				session.setAttribute(MaydayConst.USER_SESSION_KEY, user);
+				redisService.set(session.getId(), String.valueOf(user.getUserId()));
 				// 登录成功重置用户状态为正常
 				userService.updateUserNormal(user.getUserId());
 				// 添加登录日志

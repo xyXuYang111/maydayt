@@ -3,6 +3,7 @@ package com.songhaozhi.mayday.service;
 import java.util.Date;
 
 import com.songhaozhi.mayday.model.domain.User;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author : 宋浩志
@@ -19,6 +20,8 @@ public interface UserService {
 	 * @return
 	 */
 	User getByNameAndPwd(String name, String pwd) throws Exception;
+
+	User getUserInfo(String userId);
 
 	/**
 	 * 修改用户资料

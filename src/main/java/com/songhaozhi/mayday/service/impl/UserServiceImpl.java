@@ -30,6 +30,11 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	public User getUserInfo(String userId) {
+		return userMapperCustom.getUserInfo(userId);
+	}
+
+	@Override
 	public void updateDatum(User user) throws Exception {
 		userMapper.updateByPrimaryKeySelective(user);
 	}

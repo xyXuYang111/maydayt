@@ -30,7 +30,6 @@ public interface ArticleService {
 	 * 不分页查询所有文章
 	 * 
 	 * @param status
-	 * @param string 
 	 * @return
 	 */
 	List<ArticleCustom> findAllArticle(int status, String post);
@@ -131,7 +130,6 @@ public interface ArticleService {
 	 * 分页查询标签下的所有文章
 	 * 
 	 * @param page
-	 * @param size
 	 * @param tag
 	 * @param status 文章状态
 	 * @return
@@ -143,10 +141,10 @@ public interface ArticleService {
 	 * 
 	 * @param keywords
 	 * @param page
-	 * @param size
 	 * @return
 	 */
 	PageInfo<Article> findArticleByKeywords(String keywords, Integer page, Integer limit);
+
 	/**
 	 * 修改文章点击数
 	 * @param article

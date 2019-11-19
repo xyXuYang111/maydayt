@@ -18,6 +18,11 @@ public class MaydayConst {
 	 * user_session
 	 */
 	public static final String USER_SESSION_KEY = "user_session";
+
+	/**
+	 * 最大页码
+	 */
+	public static final int SESSION_TIME_OUT = 6400;
 	/**
 	 * 最大页码
 	 */
