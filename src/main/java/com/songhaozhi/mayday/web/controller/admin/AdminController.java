@@ -112,7 +112,7 @@ public class AdminController extends BaseController {
 		if (user != null) {
 			return "redirect:/admin";
 		}
-		return "admin/admin_login";
+		return "add";
 	}
 
 	/**
