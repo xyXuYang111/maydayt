@@ -42,6 +42,7 @@ import cn.hutool.extra.servlet.ServletUtil;
 @RequestMapping(value = "/admin")
 @Controller
 public class AdminController extends BaseController {
+
 	@Autowired
 	private UserService userService;
 	@Autowired
@@ -108,11 +109,7 @@ public class AdminController extends BaseController {
 	 */
 	@RequestMapping(value = "/add")
 	public String add(HttpSession session, Model model) {
-		User user = (User) session.getAttribute(MaydayConst.USER_SESSION_KEY);
-		if (user != null) {
-			return "redirect:/admin";
-		}
-		return "add";
+		return "admin/add";
 	}
 
 	/**
@@ -188,7 +185,10 @@ public class AdminController extends BaseController {
 	 */
 	@RequestMapping("/exitLogon")
 	public String exitLogon(HttpSession session) {
+		User user = (User) request.getSession().getAttribute(MaydayConst.USER_SESSION_KEY);
 		session.invalidate();
+		redisService.delete(String.valueOf(user.getUserId()));
+		redisService.delete(session.getId());
 		return "admin/admin_login";
 	}
 }
