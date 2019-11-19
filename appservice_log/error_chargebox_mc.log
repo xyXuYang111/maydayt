@@ -1,0 +1,14 @@
+2019-11-19 00:13:50.452 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'jedisPoolConfig', defined in class path resource [com/songhaozhi/mayday/config/SpringSessionConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/songhaozhi/mayday/config/RedisConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
