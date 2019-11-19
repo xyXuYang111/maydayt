@@ -101,6 +101,21 @@ public class AdminController extends BaseController {
 	}
 
 	/**
+	 * 注册
+	 *
+	 * @param session
+	 * @return
+	 */
+	@RequestMapping(value = "/add")
+	public String add(HttpSession session, Model model) {
+		User user = (User) session.getAttribute(MaydayConst.USER_SESSION_KEY);
+		if (user != null) {
+			return "redirect:/admin";
+		}
+		return "admin/admin_login";
+	}
+
+	/**
 	 * 验证
 	 * 
 	 * @param userName
