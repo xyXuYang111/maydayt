@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.songhaozhi.mayday.annotation.AuthorityIP;
 import com.songhaozhi.mayday.redis.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -107,6 +108,7 @@ public class AdminController extends BaseController {
 	 * @param session
 	 * @return
 	 */
+	@AuthorityIP(name = "add")
 	@RequestMapping(value = "/add")
 	public String add(HttpSession session, Model model) {
 		return "admin/add";

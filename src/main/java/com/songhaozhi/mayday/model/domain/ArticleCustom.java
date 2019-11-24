@@ -1,5 +1,7 @@
 package com.songhaozhi.mayday.model.domain;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.io.Serializable;
 
 /**
@@ -7,6 +9,7 @@ import java.io.Serializable;
  * @createDate 创建时间：2018年10月30日 下午8:33:14
  * 
  */
+@Document(collection = "ArticleCustom")
 public class ArticleCustom extends Article implements Serializable {
 	private static final long serialVersionUID = 3547465108813249148L;
 	// 分类id
