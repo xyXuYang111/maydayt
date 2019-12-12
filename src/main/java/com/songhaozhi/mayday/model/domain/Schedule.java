@@ -15,7 +15,7 @@ public class Schedule implements Serializable {
 
     private static final long serialVersionUID = 9221729125717316392L;
 
-    private String scheduleID;
+    private String scheduleId;
 
     private String scheduleTitle;
 

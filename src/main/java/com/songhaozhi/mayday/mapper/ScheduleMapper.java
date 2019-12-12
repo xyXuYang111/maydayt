@@ -1,18 +1,16 @@
-package com.songhaozhi.mayday.service;
+package com.songhaozhi.mayday.mapper;
 
-import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.model.domain.ArticleCustom;
 import com.songhaozhi.mayday.model.domain.Schedule;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
-public interface ScheduleService {
+@Mapper
+public interface ScheduleMapper {
 
     Schedule getScheduleInfo(Schedule schedule);
 
     List<Schedule> getScheduleList(Schedule schedule);
-
-    PageInfo<Schedule> getScheduleList(int page, int limit, Schedule schedule);
 
     String getScheduleCount(Schedule schedule);
 

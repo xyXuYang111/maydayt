@@ -40,32 +40,39 @@ public class ScheduleServiceImpl implements ScheduleService {
 	private ScheduleService scheduleService;
 
 	@Override
-	public Schedule getScheduleInfo(Schedule schedule) throws Exception {
-		return null;
+	public Schedule getScheduleInfo(Schedule schedule) {
+		return scheduleService.getScheduleInfo(schedule);
 	}
 
 	@Override
-	public List<Schedule> getScheduleList(Schedule schedule) throws Exception {
-		return null;
+	public List<Schedule> getScheduleList(Schedule schedule) {
+		return scheduleService.getScheduleList(schedule);
 	}
 
 	@Override
-	public Long count(Schedule schedule) throws Exception {
-		return null;
+	public PageInfo<Schedule> getScheduleList(int page, int limit, Schedule schedule) {
+		PageHelper.startPage(page, limit);
+		List<Schedule> lists = scheduleService.getScheduleList(schedule);
+		return new PageInfo<>(lists);
 	}
 
 	@Override
-	public void insertSchedule(Schedule schedule) throws Exception {
-
+	public String getScheduleCount(Schedule schedule) {
+		return scheduleService.getScheduleCount(schedule);
 	}
 
 	@Override
-	public void updateSchedule(Schedule schedule) throws Exception {
-
+	public void deleteSchedule(Schedule schedule) {
+		scheduleService.deleteSchedule(schedule);
 	}
 
 	@Override
-	public void deleteSchedule(Schedule schedule) throws Exception {
+	public void insertSchedule(Schedule schedule) {
+		scheduleService.insertSchedule(schedule);
+	}
 
+	@Override
+	public void updateSchedule(Schedule schedule) {
+		scheduleService.updateSchedule(schedule);
 	}
 }

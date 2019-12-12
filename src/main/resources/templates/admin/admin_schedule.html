@@ -40,33 +40,32 @@
 							<td>创建时间</td>
 							<td>操作</td>
 						</tr>
-						<tr th:each="article,iterStat : ${info.list}">
-							<td th:text="${#strings.abbreviate(article.articleTitle,20)}" class="mt-auto"></td>
-							<td th:text="${#strings.abbreviate(article.categorysName,20)}"></td>
-							<td th:text="${#strings.abbreviate(article.tagsName,20)}"></td>
-							<td
-								th:text="${#dates.format(article.articleNewstime,'yyyy/MM/dd HH:mm:ss')}"></td>
-							<td th:switch="${article.articleStatus}"><th:block
+						<tr th:each="schedule,iterStat : ${info.list}">
+							<td th:text="${#strings.abbreviate(schedule.scheduleTitle,20)}" class="mt-auto"></td>
+							<td th:text="${#strings.abbreviate(schedule.scheduleClassify,20)}"></td>
+							<td th:text="${#strings.abbreviate(schedule.scheduleTip,20)}"></td>
+							<td th:text="${#dates.format(schedule.updateDate,'yyyy/MM/dd HH:mm:ss')}"></td>
+							<td th:switch="${schedule.scheduleStatus}"><th:block
 									th:case="0">
-									<a th:href="@{'/post/'+${article.articleUrl}}"
+									<a th:href="@{'/post/'+${schedule.scheduleUrl}}"
 										th:target="_blank" class="btn btn-outline-primary btn-sm">查看</a>
-									<a th:href="@{/admin/schedule/edit(article_id=${article.id})}"
+									<a th:href="@{/admin/schedule/edit(scheduleId=${schedule.scheduleId})}"
 										class="btn btn-outline-info btn-sm">编辑</a>
 									<button
-										th:onclick="'javascript:recycleModel('+${article.id}+')'"
+										th:onclick="'javascript:recycleModel('+${schedule.scheduleId}+')'"
 										class="btn btn-outline-danger btn-sm">丢弃</button>
 								</th:block> <th:block th:case="1">
-									<a th:href="@{/admin/schedule/edit(article_id=${article.id})}"
+									<a th:href="@{/admin/schedule/edit(scheduleId=${schedule.scheduleId})}"
 										class="btn btn-outline-primary btn-sm">编辑</a>
-									<button th:onclick="'javascript:restore('+${article.id}+')'"
+									<button th:onclick="'javascript:restore('+${schedule.scheduleId}+')'"
 										class="btn btn-outline-info btn-sm">发布</button>
 									<button
-										th:onclick="'javascript:recycleModel('+${article.id}+')'"
+										th:onclick="'javascript:recycleModel('+${schedule.scheduleId}+')'"
 										class="btn btn-outline-danger btn-sm">丢弃</button>
 								</th:block> <th:block th:case="2">
-									<button th:onclick="'javascript:restore('+${article.id}+')'"
+									<button th:onclick="'javascript:restore('+${schedule.scheduleId}+')'"
 										class="btn btn-outline-primary btn-sm">还原</button>
-									<button th:onclick="'javascript:showModel('+${article.id}+')'"
+									<button th:onclick="'javascript:showModel('+${schedule.scheduleId}+')'"
 										class="btn btn-outline-danger btn-sm">彻底删除(不可逆)</button>
 								</th:block></td>
 						</tr>

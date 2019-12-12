@@ -15,6 +15,7 @@ import com.songhaozhi.mayday.model.enums.MaydayEnums;
 import com.songhaozhi.mayday.model.enums.PostType;
 import com.songhaozhi.mayday.service.ArticleService;
 import com.songhaozhi.mayday.service.CategoryService;
+import com.songhaozhi.mayday.service.ScheduleService;
 import com.songhaozhi.mayday.service.TagService;
 import com.songhaozhi.mayday.util.MaydayUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +37,7 @@ import java.util.Map;
 @RequestMapping("/admin/schedule")
 public class ScheduleController extends BaseController {
 	@Autowired
-	private ArticleService articleService;
+	private ScheduleService scheduleService;
 
 	/**
 	 * 显示所有文章
@@ -49,22 +50,40 @@ public class ScheduleController extends BaseController {
 	@GetMapping
 	public String article(Model model, @RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "limit", defaultValue = "10") int limit,
-			@RequestParam(value = "status", defaultValue = "0") int status) {
-		ArticleCustom articleCustom = new ArticleCustom();
-		articleCustom.setArticleStatus(status);
-		articleCustom.setArticlePost(PostType.POST_TYPE_POST.getValue());
-		PageInfo<ArticleCustom> pageInfo = articleService.findPageArticle(page, limit, articleCustom);
+			@RequestParam(value = "status", defaultValue = "0") String status, HttpServletRequest request) {
+
+		User user = (User) request.getSession().getAttribute(MaydayConst.USER_SESSION_KEY);
+		Integer userId = user.getUserId();
+
+		Schedule schedule = new Schedule();
+		schedule.setScheduleStatus(status);
+		schedule.setUseID(userId);
+		PageInfo<Schedule> pageInfo = scheduleService.getScheduleList(page, limit, schedule);
+
 		model.addAttribute("info", pageInfo);
+
+		Schedule schedulePublished = new Schedule();
+		schedulePublished.setScheduleStatus("0");
+		schedulePublished.setUseID(userId);
 		// 已发布条数
 		model.addAttribute("published",
-				articleService.countByStatus(ArticleStatus.PUBLISH.getStatus(), PostType.POST_TYPE_POST.getValue()));
+				scheduleService.getScheduleCount(schedulePublished));
+
+		Schedule scheduleDraft = new Schedule();
+		scheduleDraft.setScheduleStatus("1");
+		scheduleDraft.setUseID(userId);
 		// 草稿条数
 		model.addAttribute("draft",
-				articleService.countByStatus(ArticleStatus.DRAFT.getStatus(), PostType.POST_TYPE_POST.getValue()));
+				scheduleService.getScheduleCount(scheduleDraft));
+
+		Schedule scheduleRecycle = new Schedule();
+		scheduleRecycle.setScheduleStatus("2");
+		scheduleRecycle.setUseID(userId);
 		// 回收站条数
 		model.addAttribute("recycle",
-				articleService.countByStatus(ArticleStatus.RECYCLE.getStatus(), PostType.POST_TYPE_POST.getValue()));
+				scheduleService.getScheduleCount(scheduleRecycle));
 		model.addAttribute("status", status);
+
 		return "admin/admin_schedule";
 	}
 
@@ -99,16 +118,11 @@ public class ScheduleController extends BaseController {
 			if (StrUtil.isEmpty(schedule.getScheduleTitle())) {
 				return new JsonResult(false, "标题不能为空");
 			}
-			if (schedule.getScheduleID() == null) {
+			if (schedule.getScheduleId() == null) {
 				// 判断文章链接是否重复
 				if (!StrUtil.isEmpty(schedule.getScheduleUrl())) {
 					if(schedule.getScheduleUrl().length()>50) {
 						return new JsonResult(false, "路径不能大于50");
-					}
-					// 查询url是否重复
-					int repeat = articleService.findRepeatByUrl(schedule.getScheduleUrl());
-					if (repeat != 0) {
-						return new JsonResult(false, "路径已存在");
 					}
 				}
 				User user = (User) request.getSession().getAttribute(MaydayConst.USER_SESSION_KEY);
@@ -139,7 +153,7 @@ public class ScheduleController extends BaseController {
 						schedule.setScheduleDesc(summaryText);
 					}
 				}
-				//articleService.save(schedule, tags, categorys);
+				scheduleService.insertSchedule(schedule);
 				// 添加日志
 				logService.save(new Log(LogConstant.PUBLISH_AN_ARTICLE, LogConstant.SUCCESS,
 						ServletUtil.getClientIP(request), DateUtil.date()));
@@ -166,7 +180,7 @@ public class ScheduleController extends BaseController {
 				}
 				// 文章最后修改时间
 				schedule.setUpdateDate(DateUtil.date());
-				//articleService.update(article, tags, categorys);
+				scheduleService.updateSchedule(schedule);
 				// 添加日志
 				logService.save(new Log(LogConstant.UPDATE_AN_ARTICLE, LogConstant.SUCCESS,
 						ServletUtil.getClientIP(request), DateUtil.date()));

@@ -43,6 +43,6 @@
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="maydaytest" tableName="Schedule"/>
+        <table schema="maydaytest" tableName="mayday_schedule"/>
     </context>
 </generatorConfiguration>
