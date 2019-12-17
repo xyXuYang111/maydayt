@@ -1,6 +1,9 @@
 package com.songhaozhi.mayday.web.controller.admin;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -8,6 +11,9 @@ import java.util.Random;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -65,6 +71,31 @@ public class AttachmentController extends BaseController {
 	@ResponseBody
 	public JsonResult upload(@RequestParam(value = "file") MultipartFile file, HttpServletRequest request) {
 		return uploadAttachment(file, request);
+	}
+
+	@RequestMapping("/downAttachment")
+	public ResponseEntity<byte[]> download(@RequestParam(value = "id") int id) throws IOException {
+
+		// 获取用户目录
+		String userPath = System.getProperties().getProperty("user.home") + "/mayday/";
+
+		Attachment attachment = attachmentService.findById(id);
+		String filePath = attachment.getPicturePath();
+
+		StringBuilder filePathBuilder = new StringBuilder();
+		filePathBuilder.append(userPath);
+		filePathBuilder.append(filePath);
+
+		File file = new File(filePathBuilder.toString());
+		byte[] body = null;
+		InputStream is = new FileInputStream(file);
+		body = new byte[is.available()];
+		is.read(body);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("Content-Disposition", "attchement;filename=" + file.getName());
+		HttpStatus statusCode = HttpStatus.OK;
+		ResponseEntity<byte[]> entity = new ResponseEntity<byte[]>(body, headers, statusCode);
+		return entity;
 	}
 
 	/**

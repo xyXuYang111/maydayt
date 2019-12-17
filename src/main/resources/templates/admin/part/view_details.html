@@ -68,6 +68,8 @@
 									th:onclick="'javascript:deleteAttachment('+${attachment.id}+')'">永久删除</button>
 								<button class="btn btn-outline-info" id="copyVal" type="button"
 									th:attr="data-clipboard-text=${attachment!=null?options['blog_url']+attachment.picturePath:''}">复制链接</button>
+								<button class="btn btn-outline-danger" type="button"
+										th:onclick="'javascript:deleteAttachment('+${attachment.id}+')'">下载文件</button>
 							</div>
 						</form>
 					</div>
@@ -93,6 +95,49 @@
 			}, function(index) {
 				$.ajax({
 					url : '/admin/attachment/deleteAttachment',
+					type : 'post',
+					data : {
+						id : id
+					},
+					dataTpye : 'json',
+					success : function(data) {
+						if (data.flag == true) {
+							layer.close(index);
+							$.toast({
+								text : data.msg,
+								heading : '提示',
+								icon : 'success',
+								showHideTransition : 'fade',
+								allowToastClose : true,
+								hideAfter : 1000,
+								stack : 1,
+								position : 'top-center',
+								textAlign : 'left',
+								loader : true,
+								loaderBg : '#ffffff',
+								afterHidden : function() {
+									parent.location.reload();
+								}
+							});
+						} else {
+							showMsg("删除失败", "error", 3000);
+						}
+
+					},
+					error : function(data) {
+						showMsg("删除失败", "error", 3000);
+					}
+				});
+			});
+		}
+
+		function downAttachment(id) {
+			layer.confirm('您确定要下载该附件吗？', {
+				icon : 3,
+				title : '提示'
+			}, function(index) {
+				$.ajax({
+					url : '/admin/attachment/downAttachment',
 					type : 'post',
 					data : {
 						id : id
