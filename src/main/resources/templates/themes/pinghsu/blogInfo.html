@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="themes/pinghsu/header::header(${blogInfo.blogTitle},${blogInfo.blogType})"></div>
+<body>
+<article class="main-content page-page" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            <a th:href="@{'/blogInfo/'+${blogInfo.blogId}}" th:text="${blogInfo.blogTitle}" data-no-instant=""></a>
+        </h1>
+        <div class="post-data">
+            <time itemprop="datePublished" th:text="'发布于 '+ ${#dates.format(blogInfo.createTime,'yyyy/MM/dd HH:mm:ss')}"></time>/ <th:block th:utext="${blogInfo.blogType}"/>
+            	<!-- id 将作为查询条件
+		<span th:id="'/post/'+${article.articleUrl}" class="leancloud-visitors">
+    		<em class="post-meta-item-text">阅读量 </em>
+  		 	 <i class="leancloud-visitors-count"></i>
+		</span> -->
+        </div>
+    </div>
+    <div id="post-content" class="post-content" itemprop="articleBody">
+        <p class="post-tags" th:utext="${blogInfo.blogType}"></p>
+        <p class="post-info">
+            说明：<th:block th:utext="${blogInfo.blogRemark}"/>
+        </p>
+        <th:block th:utext="${blogInfo.blogContent}"/>
+        <p class="post-info">
+            本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名,转载请标明出处<br/>最后编辑时间为:
+            <th:block th:text="${#dates.format(blogInfo.createTime,'yyyy/MM/dd HH:mm:ss')}"/>
+        </p>
+        <p class="post-info">
+            备注：<th:block th:utext="${blogInfo.remark}"/>
+        </p>
+    </div>
+</article>
+</body>
+</html>

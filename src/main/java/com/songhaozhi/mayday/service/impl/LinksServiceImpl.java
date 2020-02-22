@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.songhaozhi.mayday.mapper.generator.LinkMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.LinkMapper;
 import com.songhaozhi.mayday.model.domain.Link;
 import com.songhaozhi.mayday.service.LinksService;
 
@@ -18,7 +18,7 @@ import com.songhaozhi.mayday.service.LinksService;
  * 
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class LinksServiceImpl implements LinksService {
 
 	private static final String LINKS_CACHE_KEY = "'link'";

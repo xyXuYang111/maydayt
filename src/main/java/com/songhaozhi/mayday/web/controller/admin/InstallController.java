@@ -1,44 +1,28 @@
 package com.songhaozhi.mayday.web.controller.admin;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.songhaozhi.mayday.model.domain.Article;
-import com.songhaozhi.mayday.model.domain.Log;
-import com.songhaozhi.mayday.model.domain.Menu;
-import com.songhaozhi.mayday.model.domain.Options;
-import com.songhaozhi.mayday.model.domain.Theme;
-import com.songhaozhi.mayday.model.domain.User;
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.RandomUtil;
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.crypto.SecureUtil;
+import cn.hutool.extra.servlet.ServletUtil;
+import com.songhaozhi.mayday.model.domain.*;
 import com.songhaozhi.mayday.model.dto.JsonResult;
 import com.songhaozhi.mayday.model.dto.LogConstant;
 import com.songhaozhi.mayday.model.dto.MaydayConst;
 import com.songhaozhi.mayday.model.enums.ArticleStatus;
 import com.songhaozhi.mayday.model.enums.PostType;
 import com.songhaozhi.mayday.model.enums.ThemeStatus;
-import com.songhaozhi.mayday.service.ArticleService;
-import com.songhaozhi.mayday.service.MenuService;
-import com.songhaozhi.mayday.service.OptionsService;
-import com.songhaozhi.mayday.service.ThemeService;
-import com.songhaozhi.mayday.service.UserService;
+import com.songhaozhi.mayday.service.*;
 import com.youbenzi.mdtool.tool.MDTool;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.util.RandomUtil;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.crypto.SecureUtil;
-import cn.hutool.extra.servlet.ServletUtil;
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author : 宋浩志
@@ -116,7 +100,7 @@ public class InstallController extends BaseController{
 					ServletUtil.getClientIP(request), DateUtil.date()));
 
 			List<Menu> menuList = menuService.findMenus();
-			if (menuList == null) {
+			if (menuList.size() == 0) {
 
 				//保存设置项
 				Map<String, String> optionsMap = new HashMap<>();
@@ -191,6 +175,9 @@ public class InstallController extends BaseController{
 			log.error(e.getMessage());
 			return new JsonResult(false, "系统错误");
 		}
+
+		//注册成功
+		MaydayConst.OPTIONS.put("is_install", "true");
 
 		return new JsonResult(true, "注册成功");
 	}

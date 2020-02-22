@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.songhaozhi.mayday.mapper.generator.CategoryMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.CategoryMapper;
 import com.songhaozhi.mayday.model.domain.Category;
 import com.songhaozhi.mayday.model.domain.CategoryExample;
 import com.songhaozhi.mayday.service.CategoryService;
@@ -19,7 +19,7 @@ import com.songhaozhi.mayday.service.CategoryService;
  * 
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class CategoryServiceImpl implements CategoryService {
 	private static final String CATEGORYS_CACHE_KEY = "'category'";
 	private static final String CATEGORYS_CACHE_NAME = "categorys";

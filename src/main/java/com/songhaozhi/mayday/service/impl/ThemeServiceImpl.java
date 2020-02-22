@@ -8,11 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.mapper.custom.ThemeMapperCustom;
-import com.songhaozhi.mayday.mapper.generator.ThemeMapper;
+import com.songhaozhi.mayday.mapper.mayDay.custom.ThemeMapperCustom;
+import com.songhaozhi.mayday.mapper.mayDay.generator.ThemeMapper;
 import com.songhaozhi.mayday.model.domain.Theme;
 import com.songhaozhi.mayday.model.domain.ThemeExample;
-import com.songhaozhi.mayday.model.dto.MaydayConst;
 import com.songhaozhi.mayday.model.enums.ThemeStatus;
 import com.songhaozhi.mayday.service.ThemeService;
 
@@ -24,7 +23,7 @@ import cn.hutool.core.date.DateUtil;
  * 
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class ThemeServiceImpl implements ThemeService {
 	@Autowired
 	private ThemeMapper themeMapper;

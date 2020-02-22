@@ -1,9 +1,21 @@
 package com.songhaozhi.mayday.web.controller.front;
 
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.extra.servlet.ServletUtil;
+import com.github.pagehelper.PageInfo;
+import com.songhaozhi.mayday.model.domain.*;
+import com.songhaozhi.mayday.model.dto.ArchiveBo;
+import com.songhaozhi.mayday.model.dto.MaydayConst;
+import com.songhaozhi.mayday.model.enums.ArticleStatus;
+import com.songhaozhi.mayday.model.enums.PageNumber;
+import com.songhaozhi.mayday.model.enums.PostType;
+import com.songhaozhi.mayday.model.ry.SysBlog;
+import com.songhaozhi.mayday.model.ry.SysDaily;
+import com.songhaozhi.mayday.model.ry.SysFileInfo;
+import com.songhaozhi.mayday.service.*;
+import com.songhaozhi.mayday.util.MaydayUtil;
+import com.songhaozhi.mayday.web.controller.admin.BaseController;
+import com.sun.syndication.io.FeedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,27 +23,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.model.domain.Article;
-import com.songhaozhi.mayday.model.domain.ArticleCustom;
-import com.songhaozhi.mayday.model.domain.Category;
-import com.songhaozhi.mayday.model.domain.Link;
-import com.songhaozhi.mayday.model.domain.Tag;
-import com.songhaozhi.mayday.model.dto.ArchiveBo;
-import com.songhaozhi.mayday.model.dto.MaydayConst;
-import com.songhaozhi.mayday.model.enums.ArticleStatus;
-import com.songhaozhi.mayday.model.enums.PageNumber;
-import com.songhaozhi.mayday.model.enums.PostType;
-import com.songhaozhi.mayday.service.ArticleService;
-import com.songhaozhi.mayday.service.CategoryService;
-import com.songhaozhi.mayday.service.LinksService;
-import com.songhaozhi.mayday.service.TagService;
-import com.songhaozhi.mayday.util.MaydayUtil;
-import com.songhaozhi.mayday.web.controller.admin.BaseController;
-import com.sun.syndication.io.FeedException;
-
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.extra.servlet.ServletUtil;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.util.List;
 
 /**
  * @author : 宋浩志
@@ -48,6 +43,13 @@ public class IndexController extends BaseController {
 	private CategoryService categoryService;
 	@Autowired
 	private TagService tagService;
+
+	@Autowired
+	private SysBlogService blogService;
+	@Autowired
+	private SysDailyService dailyService;
+	@Autowired
+	private SysFileInfoService fileInfoService;
 
 	/**
 	 * 请求首页
@@ -92,6 +94,137 @@ public class IndexController extends BaseController {
 		List<ArchiveBo> archiveBos = articleService.archives();
 		model.addAttribute("articleList", archiveBos);
 		return this.render("archives");
+	}
+
+	/**
+	 * 博客 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "blog")
+	public String blog(Model model) throws Exception {
+		SysBlog sysBlog = new SysBlog();
+		List<SysBlog> blogList = blogService.selectBlogList(sysBlog);
+		model.addAttribute("blogList", blogList);
+		return this.render("blog");
+	}
+
+	/**
+	 * 博客信息 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "blogInfo/{blogId}")
+	public String blogInfo(Model model, @PathVariable(value = "blogId") String blogId) throws Exception {
+		SysBlog sysBlog = new SysBlog();
+		sysBlog.setBlogId(blogId);
+		SysBlog blogInfo = blogService.selectBlog(sysBlog);
+		model.addAttribute("blogInfo", blogInfo);
+		return this.render("blogInfo");
+	}
+
+	/**
+	 * 日志 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "daily")
+	public String daily(Model model) throws Exception {
+		SysDaily sysDaily = new SysDaily();
+		List<SysDaily> dailyList = dailyService.selectDailyList(sysDaily);
+		model.addAttribute("dailyList", dailyList);
+		return this.render("daily");
+	}
+
+	/**
+	 * 日志信息 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "daily/{dailyId}")
+	public String dailyInfo(Model model, @PathVariable(value = "dailyId") String dailyId) throws Exception {
+		SysDaily sysDaily = new SysDaily();
+		sysDaily.setDailyId(dailyId);
+		SysDaily dailyInfo = dailyService.selectDaily(sysDaily);
+		model.addAttribute("dailyInfo", dailyInfo);
+		return this.render("dailyInfo");
+	}
+
+	/**
+	 * 文件 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "fileInfo")
+	public String fileInfo(Model model) throws Exception {
+		SysFileInfo fileInfo = new SysFileInfo();
+		List<SysFileInfo> fileInfoList = fileInfoService.selectFileList(fileInfo);
+		model.addAttribute("fileInfoList", fileInfoList);
+		return this.render("fileInfo");
+	}
+
+	/**
+	 * 文件下载
+	 * @param response
+	 * @param fileId
+	 */
+	@GetMapping(value="/downFile/{fileId}")
+	public void downFile(HttpServletResponse response, @PathVariable String fileId){
+
+		SysFileInfo sysFileInfo = new SysFileInfo();
+		sysFileInfo.setFileId(fileId);
+		SysFileInfo sysFileInfo1 = fileInfoService.selectFileInfo(sysFileInfo);
+		//本地生成二维码
+		String fileUrl= sysFileInfo1.getFileUrl();
+		if(fileUrl != null && fileUrl.trim().length() > 0){
+			File file = new File(fileUrl);
+			response.setContentType("application/force-download");// 设置强制下载不打开
+			response.addHeader("Content-Disposition",
+					"attachment;fileName=" + file.getName());// 设置文件名
+			byte[] buffer = new byte[1024];
+			FileInputStream fis = null;
+			BufferedInputStream bis = null;
+			try {
+				fis = new FileInputStream(file);
+				bis = new BufferedInputStream(fis);
+				OutputStream os = response.getOutputStream();
+				int i = bis.read(buffer);
+				while (i != -1) {
+					os.write(buffer, 0, i);
+					i = bis.read(buffer);
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			} finally {
+				if (bis != null) {
+					try {
+						bis.close();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				if (fis != null) {
+					try {
+						fis.close();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		}
 	}
 
 	/**
@@ -176,7 +309,7 @@ public class IndexController extends BaseController {
 	/**
 	 * 自建页面
 	 * 
-	 * @param pagename
+	 * @param
 	 * @param model
 	 * @return
 	 */

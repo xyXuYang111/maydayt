@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.songhaozhi.mayday.mapper.generator.OptionsMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.OptionsMapper;
 import com.songhaozhi.mayday.model.domain.Options;
 import com.songhaozhi.mayday.model.domain.OptionsExample;
 import com.songhaozhi.mayday.model.domain.OptionsExample.Criteria;
@@ -21,7 +21,7 @@ import cn.hutool.core.util.StrUtil;
  * @createDate : 2018年10月12日
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class OptionsServiceImpl implements OptionsService {
 	private static final String ARTICLES_CACHE_NAME = "articles";
 	

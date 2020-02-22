@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.mapper.generator.AttachmentMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.AttachmentMapper;
 import com.songhaozhi.mayday.model.domain.Attachment;
 import com.songhaozhi.mayday.model.domain.AttachmentExample;
 import com.songhaozhi.mayday.service.AttachmentService;
@@ -20,7 +20,7 @@ import com.songhaozhi.mayday.service.AttachmentService;
  * @createDate : 2018年9月7日
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class AttachmentServiceImpl implements AttachmentService {
 
 	private static final String ATTACHMENTS_CACHE_NAME = "attachments";

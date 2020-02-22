@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.songhaozhi.mayday.mapper.generator.MenuMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.MenuMapper;
 import com.songhaozhi.mayday.model.domain.Menu;
 import com.songhaozhi.mayday.model.domain.MenuExample;
 import com.songhaozhi.mayday.service.MenuService;
@@ -18,7 +18,7 @@ import com.songhaozhi.mayday.service.MenuService;
  * @createDate : 2018年12月18日
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class MenuServiceImpl implements MenuService {
 
 	private static final String MENUS_CACHE_KEY = "'menu'";

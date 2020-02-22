@@ -1,30 +1,13 @@
 package com.songhaozhi.mayday.service.impl;
 
-import cn.hutool.core.date.DateUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.mapper.custom.ArticleMapperCustom;
-import com.songhaozhi.mayday.mapper.custom.CategoryMapperCustom;
-import com.songhaozhi.mayday.mapper.custom.TagMapperCustom;
-import com.songhaozhi.mayday.mapper.generator.ArticleCategoryMapper;
-import com.songhaozhi.mayday.mapper.generator.ArticleMapper;
-import com.songhaozhi.mayday.mapper.generator.ArticleTagMapper;
 import com.songhaozhi.mayday.model.domain.*;
-import com.songhaozhi.mayday.model.dto.ArchiveBo;
-import com.songhaozhi.mayday.model.enums.ArticleStatus;
-import com.songhaozhi.mayday.model.enums.PostType;
-import com.songhaozhi.mayday.service.ArticleService;
 import com.songhaozhi.mayday.service.ScheduleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,7 +16,7 @@ import java.util.List;
  * 
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class ScheduleServiceImpl implements ScheduleService {
 
 	@Autowired

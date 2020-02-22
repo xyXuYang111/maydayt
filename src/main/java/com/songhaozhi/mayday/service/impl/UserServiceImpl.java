@@ -11,13 +11,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.songhaozhi.mayday.mapper.custom.UserMapperCustom;
-import com.songhaozhi.mayday.mapper.generator.UserMapper;
+import com.songhaozhi.mayday.mapper.mayDay.custom.UserMapperCustom;
+import com.songhaozhi.mayday.mapper.mayDay.generator.UserMapper;
 import com.songhaozhi.mayday.model.domain.User;
 import com.songhaozhi.mayday.service.UserService;
 
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserMapperCustom userMapperCustom;

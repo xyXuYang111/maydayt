@@ -10,8 +10,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.mapper.custom.LogMapperCustom;
-import com.songhaozhi.mayday.mapper.generator.LogMapper;
+import com.songhaozhi.mayday.mapper.mayDay.custom.LogMapperCustom;
+import com.songhaozhi.mayday.mapper.mayDay.generator.LogMapper;
 import com.songhaozhi.mayday.model.domain.Log;
 import com.songhaozhi.mayday.model.domain.LogExample;
 import com.songhaozhi.mayday.service.LogService;
@@ -21,7 +21,7 @@ import com.songhaozhi.mayday.service.LogService;
  * @createDate : 2018年9月28日
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class LogServiceImpl implements LogService {
 
 	private static final String LOGS_CACHE_NAME = "logs";

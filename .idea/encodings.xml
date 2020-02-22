@@ -2,14 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/emailMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/fileMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/historyMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/loggerMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/menuMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/messageMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/objectMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mapper/userMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/crm/mybatis-config.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/mayDay/mybatis-config.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/ry/mybatis-config.xml" charset="GBK" />
   </component>
 </project>

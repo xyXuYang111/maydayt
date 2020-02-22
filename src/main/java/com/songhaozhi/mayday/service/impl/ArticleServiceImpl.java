@@ -14,12 +14,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.songhaozhi.mayday.mapper.custom.ArticleMapperCustom;
-import com.songhaozhi.mayday.mapper.custom.CategoryMapperCustom;
-import com.songhaozhi.mayday.mapper.custom.TagMapperCustom;
-import com.songhaozhi.mayday.mapper.generator.ArticleCategoryMapper;
-import com.songhaozhi.mayday.mapper.generator.ArticleMapper;
-import com.songhaozhi.mayday.mapper.generator.ArticleTagMapper;
+import com.songhaozhi.mayday.mapper.mayDay.custom.ArticleMapperCustom;
+import com.songhaozhi.mayday.mapper.mayDay.custom.CategoryMapperCustom;
+import com.songhaozhi.mayday.mapper.mayDay.custom.TagMapperCustom;
+import com.songhaozhi.mayday.mapper.mayDay.generator.ArticleCategoryMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.ArticleMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.ArticleTagMapper;
 import com.songhaozhi.mayday.model.domain.Article;
 import com.songhaozhi.mayday.model.domain.ArticleCategory;
 import com.songhaozhi.mayday.model.domain.ArticleCategoryExample;
@@ -42,7 +42,7 @@ import cn.hutool.core.date.DateUtil;
  * 
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class ArticleServiceImpl implements ArticleService {
 
 	private static final String ARTICLES_CACHE_KEY = "'article'";

@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.songhaozhi.mayday.mapper.generator.TagMapper;
+import com.songhaozhi.mayday.mapper.mayDay.generator.TagMapper;
 import com.songhaozhi.mayday.model.domain.Tag;
 import com.songhaozhi.mayday.model.domain.TagExample;
 import com.songhaozhi.mayday.service.TagService;
@@ -19,7 +19,7 @@ import com.songhaozhi.mayday.service.TagService;
  * 
  */
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
+@Transactional(transactionManager = "mayDayTransactional", rollbackFor = RuntimeException.class)
 public class TagServiceImpl implements TagService {
 	private static final String TAGS_CACHE_KEY = "'tag'";
 	private static final String TAGS_CACHE_NAME = "tags";
