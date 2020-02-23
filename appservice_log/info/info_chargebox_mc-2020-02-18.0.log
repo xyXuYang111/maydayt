@@ -1,0 +1,1115 @@
+2020-02-18 14:46:23.621 [restartedMain] INFO  com.Application - Starting Application on DESKTOP-11F85RH with PID 18880 (E:\java\maydayt\target\classes started by xuyang in E:\java\maydayt)
+2020-02-18 14:46:23.628 [restartedMain] DEBUG com.Application - Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-02-18 14:46:23.632 [restartedMain] INFO  com.Application - No active profile set, falling back to default profiles: default
+2020-02-18 14:46:23.737 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-18 14:46:23.737 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-18 14:46:27.624 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-02-18 14:46:27.628 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\ScheduleMapper.class]
+2020-02-18 14:46:27.629 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\ArticleMapperCustom.class]
+2020-02-18 14:46:27.630 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\CategoryMapperCustom.class]
+2020-02-18 14:46:27.631 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\LinkMapperCustom.class]
+2020-02-18 14:46:27.631 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\LogMapperCustom.class]
+2020-02-18 14:46:27.631 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\OptionsMapperCustom.class]
+2020-02-18 14:46:27.631 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\ScheduleMapperCustom.class]
+2020-02-18 14:46:27.631 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\TagMapperCustom.class]
+2020-02-18 14:46:27.632 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\ThemeMapperCustom.class]
+2020-02-18 14:46:27.632 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\UserMapperCustom.class]
+2020-02-18 14:46:27.632 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ArticleCategoryMapper.class]
+2020-02-18 14:46:27.633 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ArticleMapper.class]
+2020-02-18 14:46:27.633 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ArticleTagMapper.class]
+2020-02-18 14:46:27.633 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\AttachmentMapper.class]
+2020-02-18 14:46:27.633 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\CategoryMapper.class]
+2020-02-18 14:46:27.633 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\LinkMapper.class]
+2020-02-18 14:46:27.634 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\LogMapper.class]
+2020-02-18 14:46:27.634 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\MenuMapper.class]
+2020-02-18 14:46:27.634 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\OptionsMapper.class]
+2020-02-18 14:46:27.635 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\TagMapper.class]
+2020-02-18 14:46:27.635 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ThemeMapper.class]
+2020-02-18 14:46:27.635 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\UserMapper.class]
+2020-02-18 14:46:27.636 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scheduleMapper' and 'com.songhaozhi.mayday.mapper.mayDay.ScheduleMapper' mapperInterface
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scheduleMapper'.
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.ArticleMapperCustom' mapperInterface
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleMapperCustom'.
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'categoryMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.CategoryMapperCustom' mapperInterface
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'categoryMapperCustom'.
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'linkMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.LinkMapperCustom' mapperInterface
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'linkMapperCustom'.
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'logMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.LogMapperCustom' mapperInterface
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'logMapperCustom'.
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'optionsMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.OptionsMapperCustom' mapperInterface
+2020-02-18 14:46:27.637 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'optionsMapperCustom'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scheduleMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.ScheduleMapperCustom' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scheduleMapperCustom'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tagMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.TagMapperCustom' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'tagMapperCustom'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'themeMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.ThemeMapperCustom' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'themeMapperCustom'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.UserMapperCustom' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapperCustom'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleCategoryMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ArticleCategoryMapper' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleCategoryMapper'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ArticleMapper' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleTagMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ArticleTagMapper' mapperInterface
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleTagMapper'.
+2020-02-18 14:46:27.638 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'attachmentMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.AttachmentMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'attachmentMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'categoryMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.CategoryMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'linkMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.LinkMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'linkMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'logMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.LogMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'logMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'menuMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.MenuMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'menuMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'optionsMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.OptionsMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'optionsMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tagMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.TagMapper' mapperInterface
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'tagMapper'.
+2020-02-18 14:46:27.639 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'themeMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ThemeMapper' mapperInterface
+2020-02-18 14:46:27.640 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'themeMapper'.
+2020-02-18 14:46:27.640 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.UserMapper' mapperInterface
+2020-02-18 14:46:27.640 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2020-02-18 14:46:27.936 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-18 14:46:27.937 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-18 14:46:29.084 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1138ms. Found 0 repository interfaces.
+2020-02-18 14:46:29.099 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-18 14:46:29.100 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-18 14:46:29.849 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 667ms. Found 0 repository interfaces.
+2020-02-18 14:46:30.366 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b76b35f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-18 14:46:30.556 [restartedMain] INFO  com.songhaozhi.mayday.config.SpringSessionConfig - 配置连接池
+2020-02-18 14:46:30.560 [restartedMain] INFO  com.songhaozhi.mayday.config.SpringSessionConfig - 连接redis
+2020-02-18 14:46:30.926 [restartedMain] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-02-18 14:46:30.933 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Article matches criteria [is assignable to Object]
+2020-02-18 14:46:30.934 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategory matches criteria [is assignable to Object]
+2020-02-18 14:46:30.934 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.935 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.935 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.936 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.936 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCustom matches criteria [is assignable to Object]
+2020-02-18 14:46:30.937 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.939 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.939 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.939 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.940 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTag matches criteria [is assignable to Object]
+2020-02-18 14:46:30.940 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.941 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.942 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.942 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.942 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Attachment matches criteria [is assignable to Object]
+2020-02-18 14:46:30.943 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.944 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.945 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.945 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.945 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Category matches criteria [is assignable to Object]
+2020-02-18 14:46:30.945 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.946 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.946 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.946 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.947 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Link matches criteria [is assignable to Object]
+2020-02-18 14:46:30.947 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.948 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.948 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.948 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.949 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Log matches criteria [is assignable to Object]
+2020-02-18 14:46:30.949 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.951 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.951 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.951 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.951 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Menu matches criteria [is assignable to Object]
+2020-02-18 14:46:30.952 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.953 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.953 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.953 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.954 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Options matches criteria [is assignable to Object]
+2020-02-18 14:46:30.954 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.955 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.955 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.955 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.955 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Schedule matches criteria [is assignable to Object]
+2020-02-18 14:46:30.956 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Tag matches criteria [is assignable to Object]
+2020-02-18 14:46:30.956 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.958 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.958 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.958 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.959 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Theme matches criteria [is assignable to Object]
+2020-02-18 14:46:30.959 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.960 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.961 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.961 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.962 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Url matches criteria [is assignable to Object]
+2020-02-18 14:46:30.962 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.User matches criteria [is assignable to Object]
+2020-02-18 14:46:30.962 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.964 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:46:30.964 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:46:30.964 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample matches criteria [is assignable to Object]
+2020-02-18 14:46:30.966 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.songhaozhi.mayday.model.domain' for aliases
+2020-02-18 14:46:31.106 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\ArticleMapperCustom.xml]'
+2020-02-18 14:46:31.112 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\CategoryMapperCustom.xml]'
+2020-02-18 14:46:31.115 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\LinkMapperCustom.xml]'
+2020-02-18 14:46:31.119 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\LogMapperCustom.xml]'
+2020-02-18 14:46:31.135 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\OptionsMapperCustom.xml]'
+2020-02-18 14:46:31.156 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\ScheduleMapper.xml]'
+2020-02-18 14:46:31.161 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\TagMapperCustom.xml]'
+2020-02-18 14:46:31.166 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\ThemeMapperCustom.xml]'
+2020-02-18 14:46:31.172 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\UserMapperCustom.xml]'
+2020-02-18 14:46:31.196 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ArticleCategoryMapper.xml]'
+2020-02-18 14:46:31.212 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ArticleMapper.xml]'
+2020-02-18 14:46:31.233 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ArticleTagMapper.xml]'
+2020-02-18 14:46:31.247 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\AttachmentMapper.xml]'
+2020-02-18 14:46:31.262 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\CategoryMapper.xml]'
+2020-02-18 14:46:31.271 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\LinkMapper.xml]'
+2020-02-18 14:46:31.281 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\LogMapper.xml]'
+2020-02-18 14:46:31.292 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\MenuMapper.xml]'
+2020-02-18 14:46:31.309 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\OptionsMapper.xml]'
+2020-02-18 14:46:31.318 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\TagMapper.xml]'
+2020-02-18 14:46:31.329 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ThemeMapper.xml]'
+2020-02-18 14:46:31.339 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\UserMapper.xml]'
+2020-02-18 14:46:31.688 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2020-02-18 14:46:31.715 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-18 14:46:31.724 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-18 14:46:31.724 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-18 14:46:31.848 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-18 14:46:31.848 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8110 ms
+2020-02-18 14:46:32.036 [restartedMain] INFO  com.songhaozhi.mayday.config.SpringSessionConfig - 配置spring-data-redis的redisTemplate
+2020-02-18 14:46:32.060 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-18 14:46:32.060 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-02-18 14:46:32.063 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-18 14:46:32.063 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-02-18 14:46:32.064 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-02-18 14:46:32.065 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-02-18 14:46:32.066 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-02-18 14:46:32.066 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-02-18 14:46:32.066 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-02-18 14:46:32.066 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-02-18 14:46:32.066 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-02-18 14:46:32.070 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-02-18 14:46:32.070 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-02-18 14:46:32.070 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-02-18 14:46:32.070 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-02-18 14:46:32.071 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-02-18 14:46:32.260 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-18 14:46:32.516 [restartedMain] DEBUG i.n.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2020-02-18 14:46:32.520 [restartedMain] DEBUG io.lettuce.core.resource.DefaultClientResources - -Dio.netty.eventLoopThreads: 12
+2020-02-18 14:46:32.546 [restartedMain] DEBUG i.l.core.resource.DefaultEventLoopGroupProvider - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2020-02-18 14:46:32.586 [restartedMain] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-02-18 14:46:32.586 [restartedMain] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-02-18 14:46:32.599 [restartedMain] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2020-02-18 14:46:32.599 [restartedMain] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2020-02-18 14:46:32.610 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2020-02-18 14:46:32.613 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2020-02-18 14:46:32.614 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2020-02-18 14:46:32.614 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2020-02-18 14:46:32.615 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2020-02-18 14:46:32.618 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2020-02-18 14:46:32.619 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2020-02-18 14:46:32.619 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2020-02-18 14:46:32.619 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-02-18 14:46:32.619 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2020-02-18 14:46:32.619 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2020-02-18 14:46:32.620 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\xuyang\AppData\Local\Temp (java.io.tmpdir)
+2020-02-18 14:46:32.620 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-02-18 14:46:32.624 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3782737920 bytes
+2020-02-18 14:46:32.624 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-02-18 14:46:32.624 [restartedMain] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2020-02-18 14:46:32.626 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2020-02-18 14:46:32.626 [restartedMain] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@16bd8f78
+2020-02-18 14:46:32.628 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2020-02-18 14:46:32.644 [restartedMain] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+2020-02-18 14:46:32.678 [restartedMain] DEBUG io.lettuce.core.resource.DefaultClientResources - LatencyUtils/HdrUtils are not available, metrics are disabled
+2020-02-18 14:46:34.539 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-18 14:46:34.588 [restartedMain] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2020-02-18 14:46:34.618 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:18}] to localhost:27017
+2020-02-18 14:46:34.618 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:46:34.659 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 4 to database admin on connection [connectionId{localValue:1, serverValue:18}] to server localhost:27017
+2020-02-18 14:46:34.660 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 4 completed successfully in 34.84 ms on connection [connectionId{localValue:1, serverValue:18}] to server localhost:27017
+2020-02-18 14:46:34.661 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=41365600}
+2020-02-18 14:46:34.662 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=41.4 ms, state=CONNECTED}]
+2020-02-18 14:46:35.383 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-18 14:46:35.589 [restartedMain] DEBUG reactor.core.publisher.Hooks - Enabling stacktrace debugging via onOperatorDebug
+2020-02-18 14:46:35.607 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-02-18 14:46:35.793 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-02-18 14:46:35.898 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-18 14:46:35.905 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-18 14:46:35.945 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-02-18 14:46:35.946 [cluster-ClusterId{value='5e4b884a8560d949c094721d', description='null'}-localhost:27017] DEBUG org.mongodb.driver.connection - Closing connection connectionId{localValue:1, serverValue:18}
+2020-02-18 14:46:35.947 [restartedMain] DEBUG io.lettuce.core.resource.DefaultClientResources - Initiate shutdown (0, 2, SECONDS)
+2020-02-18 14:46:35.948 [restartedMain] DEBUG i.l.core.resource.DefaultEventLoopGroupProvider - Initiate shutdown (0, 2, SECONDS)
+2020-02-18 14:46:35.955 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-18 14:46:35.959 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-02-18 14:48:15.144 [restartedMain] INFO  com.Application - Starting Application on DESKTOP-11F85RH with PID 19484 (E:\java\maydayt\target\classes started by xuyang in E:\java\maydayt)
+2020-02-18 14:48:15.147 [restartedMain] DEBUG com.Application - Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-02-18 14:48:15.148 [restartedMain] INFO  com.Application - No active profile set, falling back to default profiles: default
+2020-02-18 14:48:15.198 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-18 14:48:15.198 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-18 14:48:17.484 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-02-18 14:48:17.489 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\ScheduleMapper.class]
+2020-02-18 14:48:17.490 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\ArticleMapperCustom.class]
+2020-02-18 14:48:17.490 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\CategoryMapperCustom.class]
+2020-02-18 14:48:17.490 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\LinkMapperCustom.class]
+2020-02-18 14:48:17.490 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\LogMapperCustom.class]
+2020-02-18 14:48:17.491 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\OptionsMapperCustom.class]
+2020-02-18 14:48:17.491 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\ScheduleMapperCustom.class]
+2020-02-18 14:48:17.491 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\TagMapperCustom.class]
+2020-02-18 14:48:17.491 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\ThemeMapperCustom.class]
+2020-02-18 14:48:17.492 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\custom\UserMapperCustom.class]
+2020-02-18 14:48:17.492 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ArticleCategoryMapper.class]
+2020-02-18 14:48:17.492 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ArticleMapper.class]
+2020-02-18 14:48:17.493 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ArticleTagMapper.class]
+2020-02-18 14:48:17.493 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\AttachmentMapper.class]
+2020-02-18 14:48:17.493 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\CategoryMapper.class]
+2020-02-18 14:48:17.493 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\LinkMapper.class]
+2020-02-18 14:48:17.494 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\LogMapper.class]
+2020-02-18 14:48:17.494 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\MenuMapper.class]
+2020-02-18 14:48:17.494 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\OptionsMapper.class]
+2020-02-18 14:48:17.494 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\TagMapper.class]
+2020-02-18 14:48:17.494 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\ThemeMapper.class]
+2020-02-18 14:48:17.494 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\java\maydayt\target\classes\com\songhaozhi\mayday\mapper\generator\UserMapper.class]
+2020-02-18 14:48:17.495 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scheduleMapper' and 'com.songhaozhi.mayday.mapper.mayDay.ScheduleMapper' mapperInterface
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scheduleMapper'.
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.ArticleMapperCustom' mapperInterface
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleMapperCustom'.
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'categoryMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.CategoryMapperCustom' mapperInterface
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'categoryMapperCustom'.
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'linkMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.LinkMapperCustom' mapperInterface
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'linkMapperCustom'.
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'logMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.LogMapperCustom' mapperInterface
+2020-02-18 14:48:17.496 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'logMapperCustom'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'optionsMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.OptionsMapperCustom' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'optionsMapperCustom'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scheduleMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.ScheduleMapperCustom' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scheduleMapperCustom'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tagMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.TagMapperCustom' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'tagMapperCustom'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'themeMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.ThemeMapperCustom' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'themeMapperCustom'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapperCustom' and 'com.songhaozhi.mayday.mapper.mayDay.custom.UserMapperCustom' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapperCustom'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleCategoryMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ArticleCategoryMapper' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleCategoryMapper'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ArticleMapper' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleMapper'.
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleTagMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ArticleTagMapper' mapperInterface
+2020-02-18 14:48:17.497 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'articleTagMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'attachmentMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.AttachmentMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'attachmentMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'categoryMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.CategoryMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'linkMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.LinkMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'linkMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'logMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.LogMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'logMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'menuMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.MenuMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'menuMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'optionsMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.OptionsMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'optionsMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tagMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.TagMapper' mapperInterface
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'tagMapper'.
+2020-02-18 14:48:17.498 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'themeMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.ThemeMapper' mapperInterface
+2020-02-18 14:48:17.499 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'themeMapper'.
+2020-02-18 14:48:17.499 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.songhaozhi.mayday.mapper.mayDay.generator.UserMapper' mapperInterface
+2020-02-18 14:48:17.499 [restartedMain] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2020-02-18 14:48:17.688 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-18 14:48:17.689 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-18 14:48:18.739 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1043ms. Found 0 repository interfaces.
+2020-02-18 14:48:18.753 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-18 14:48:18.754 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-18 14:48:19.404 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 644ms. Found 0 repository interfaces.
+2020-02-18 14:48:19.793 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c3670da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-18 14:48:19.964 [restartedMain] INFO  com.songhaozhi.mayday.config.SpringSessionConfig - 配置连接池
+2020-02-18 14:48:19.967 [restartedMain] INFO  com.songhaozhi.mayday.config.SpringSessionConfig - 连接redis
+2020-02-18 14:48:20.230 [restartedMain] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2020-02-18 14:48:20.237 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Article matches criteria [is assignable to Object]
+2020-02-18 14:48:20.238 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategory matches criteria [is assignable to Object]
+2020-02-18 14:48:20.238 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.239 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.239 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.239 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCategoryExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.240 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleCustom matches criteria [is assignable to Object]
+2020-02-18 14:48:20.240 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.242 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.243 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.244 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.244 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTag matches criteria [is assignable to Object]
+2020-02-18 14:48:20.244 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.245 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.245 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.246 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ArticleTagExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.246 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Attachment matches criteria [is assignable to Object]
+2020-02-18 14:48:20.246 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.247 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.248 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.248 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.AttachmentExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.248 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Category matches criteria [is assignable to Object]
+2020-02-18 14:48:20.248 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.249 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.250 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.250 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.CategoryExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.250 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Link matches criteria [is assignable to Object]
+2020-02-18 14:48:20.250 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.251 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.252 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.252 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LinkExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.252 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Log matches criteria [is assignable to Object]
+2020-02-18 14:48:20.252 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.254 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.254 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.254 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.LogExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.254 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Menu matches criteria [is assignable to Object]
+2020-02-18 14:48:20.255 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.256 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.256 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.256 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.MenuExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.256 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Options matches criteria [is assignable to Object]
+2020-02-18 14:48:20.257 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.257 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.258 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.258 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.OptionsExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.258 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Schedule matches criteria [is assignable to Object]
+2020-02-18 14:48:20.259 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Tag matches criteria [is assignable to Object]
+2020-02-18 14:48:20.259 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.260 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.260 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.260 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.TagExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.261 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Theme matches criteria [is assignable to Object]
+2020-02-18 14:48:20.261 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.262 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.262 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.263 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.ThemeExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.263 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.Url matches criteria [is assignable to Object]
+2020-02-18 14:48:20.263 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.User matches criteria [is assignable to Object]
+2020-02-18 14:48:20.263 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample$Criteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.265 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample$Criterion matches criteria [is assignable to Object]
+2020-02-18 14:48:20.265 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample$GeneratedCriteria matches criteria [is assignable to Object]
+2020-02-18 14:48:20.265 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.songhaozhi.mayday.model.domain.UserExample matches criteria [is assignable to Object]
+2020-02-18 14:48:20.267 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.songhaozhi.mayday.model.domain' for aliases
+2020-02-18 14:48:20.345 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\ArticleMapperCustom.xml]'
+2020-02-18 14:48:20.350 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\CategoryMapperCustom.xml]'
+2020-02-18 14:48:20.354 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\LinkMapperCustom.xml]'
+2020-02-18 14:48:20.358 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\LogMapperCustom.xml]'
+2020-02-18 14:48:20.362 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\OptionsMapperCustom.xml]'
+2020-02-18 14:48:20.375 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\ScheduleMapper.xml]'
+2020-02-18 14:48:20.379 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\TagMapperCustom.xml]'
+2020-02-18 14:48:20.382 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\ThemeMapperCustom.xml]'
+2020-02-18 14:48:20.387 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\custom\UserMapperCustom.xml]'
+2020-02-18 14:48:20.397 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ArticleCategoryMapper.xml]'
+2020-02-18 14:48:20.408 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ArticleMapper.xml]'
+2020-02-18 14:48:20.416 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ArticleTagMapper.xml]'
+2020-02-18 14:48:20.424 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\AttachmentMapper.xml]'
+2020-02-18 14:48:20.430 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\CategoryMapper.xml]'
+2020-02-18 14:48:20.437 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\LinkMapper.xml]'
+2020-02-18 14:48:20.445 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\LogMapper.xml]'
+2020-02-18 14:48:20.452 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\MenuMapper.xml]'
+2020-02-18 14:48:20.459 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\OptionsMapper.xml]'
+2020-02-18 14:48:20.465 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\TagMapper.xml]'
+2020-02-18 14:48:20.472 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\ThemeMapper.xml]'
+2020-02-18 14:48:20.478 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\java\maydayt\target\classes\mapper\generator\UserMapper.xml]'
+2020-02-18 14:48:20.705 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2020-02-18 14:48:20.717 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-18 14:48:20.725 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-18 14:48:20.725 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-18 14:48:20.840 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-18 14:48:20.840 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5642 ms
+2020-02-18 14:48:21.020 [restartedMain] INFO  com.songhaozhi.mayday.config.SpringSessionConfig - 配置spring-data-redis的redisTemplate
+2020-02-18 14:48:21.040 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-18 14:48:21.040 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-02-18 14:48:21.042 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-02-18 14:48:21.043 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-02-18 14:48:21.044 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-02-18 14:48:21.044 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-02-18 14:48:21.045 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-02-18 14:48:21.045 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-02-18 14:48:21.045 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-02-18 14:48:21.046 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-02-18 14:48:21.046 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-02-18 14:48:21.050 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-02-18 14:48:21.050 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-02-18 14:48:21.050 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-02-18 14:48:21.050 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-02-18 14:48:21.050 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-02-18 14:48:21.218 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-18 14:48:21.439 [restartedMain] DEBUG i.n.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2020-02-18 14:48:21.441 [restartedMain] DEBUG io.lettuce.core.resource.DefaultClientResources - -Dio.netty.eventLoopThreads: 12
+2020-02-18 14:48:21.450 [restartedMain] DEBUG i.l.core.resource.DefaultEventLoopGroupProvider - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2020-02-18 14:48:21.470 [restartedMain] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-02-18 14:48:21.470 [restartedMain] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-02-18 14:48:21.475 [restartedMain] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2020-02-18 14:48:21.475 [restartedMain] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2020-02-18 14:48:21.478 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2020-02-18 14:48:21.479 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2020-02-18 14:48:21.479 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2020-02-18 14:48:21.480 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2020-02-18 14:48:21.481 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2020-02-18 14:48:21.481 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2020-02-18 14:48:21.482 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2020-02-18 14:48:21.482 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2020-02-18 14:48:21.482 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-02-18 14:48:21.482 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2020-02-18 14:48:21.482 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2020-02-18 14:48:21.483 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\xuyang\AppData\Local\Temp (java.io.tmpdir)
+2020-02-18 14:48:21.483 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-02-18 14:48:21.484 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3782737920 bytes
+2020-02-18 14:48:21.484 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-02-18 14:48:21.485 [restartedMain] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2020-02-18 14:48:21.485 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2020-02-18 14:48:21.485 [restartedMain] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@19894e06
+2020-02-18 14:48:21.487 [restartedMain] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2020-02-18 14:48:21.499 [restartedMain] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+2020-02-18 14:48:21.521 [restartedMain] DEBUG io.lettuce.core.resource.DefaultClientResources - LatencyUtils/HdrUtils are not available, metrics are disabled
+2020-02-18 14:48:23.257 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-18 14:48:23.282 [restartedMain] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2020-02-18 14:48:23.313 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:19}] to localhost:27017
+2020-02-18 14:48:23.313 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:48:23.338 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 4 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:23.340 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 4 completed successfully in 22.32 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:23.341 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26140500}
+2020-02-18 14:48:23.342 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=26.1 ms, state=CONNECTED}]
+2020-02-18 14:48:23.972 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-18 14:48:24.135 [restartedMain] DEBUG reactor.core.publisher.Hooks - Enabling stacktrace debugging via onOperatorDebug
+2020-02-18 14:48:24.150 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-02-18 14:48:24.331 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-02-18 14:48:24.424 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-02-18 14:48:24.455 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d3a3c98]
+2020-02-18 14:48:24.476 [restartedMain] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e5ef229] will be managed by Spring
+2020-02-18 14:48:24.478 [restartedMain] DEBUG c.s.m.m.generator.OptionsMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, option_name, option_value from mayday_options 
+2020-02-18 14:48:24.495 [restartedMain] DEBUG c.s.m.m.generator.OptionsMapper.selectByExample - ==> Parameters: 
+2020-02-18 14:48:24.528 [restartedMain] DEBUG c.s.m.m.generator.OptionsMapper.selectByExample - <==      Total: 0
+2020-02-18 14:48:24.529 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d3a3c98]
+2020-02-18 14:48:24.530 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d3a3c98]
+2020-02-18 14:48:24.530 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d3a3c98]
+2020-02-18 14:48:24.530 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d3a3c98]
+2020-02-18 14:48:24.678 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-02-18 14:48:24.678 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707115d3]
+2020-02-18 14:48:24.681 [restartedMain] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e5ef229] will be managed by Spring
+2020-02-18 14:48:24.681 [restartedMain] DEBUG c.s.m.mapper.generator.MenuMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, menu_id, menu_icon, menu_name, menu_sort, menu_target, menu_url from mayday_menu order by menu_sort 
+2020-02-18 14:48:24.681 [restartedMain] DEBUG c.s.m.mapper.generator.MenuMapper.selectByExample - ==> Parameters: 
+2020-02-18 14:48:24.691 [restartedMain] DEBUG c.s.m.mapper.generator.MenuMapper.selectByExample - <==      Total: 0
+2020-02-18 14:48:24.691 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707115d3]
+2020-02-18 14:48:24.693 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707115d3]
+2020-02-18 14:48:24.693 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707115d3]
+2020-02-18 14:48:24.693 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@707115d3]
+2020-02-18 14:48:24.697 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-02-18 14:48:24.697 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f834ea2]
+2020-02-18 14:48:24.703 [restartedMain] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e5ef229] will be managed by Spring
+2020-02-18 14:48:24.704 [restartedMain] DEBUG c.s.m.mapper.generator.ThemeMapper.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, theme_name, theme_describe, theme_img, theme_status, create_time from mayday_theme WHERE ( theme_status = ? ) 
+2020-02-18 14:48:24.704 [restartedMain] DEBUG c.s.m.mapper.generator.ThemeMapper.selectByExample - ==> Parameters: 1(Integer)
+2020-02-18 14:48:24.707 [restartedMain] DEBUG c.s.m.mapper.generator.ThemeMapper.selectByExample - <==      Total: 0
+2020-02-18 14:48:24.708 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f834ea2]
+2020-02-18 14:48:24.708 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f834ea2]
+2020-02-18 14:48:24.708 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f834ea2]
+2020-02-18 14:48:24.708 [restartedMain] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f834ea2]
+2020-02-18 14:48:24.711 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2020-02-18 14:48:24.733 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path ''
+2020-02-18 14:48:24.753 [restartedMain] INFO  com.Application - Started Application in 10.238 seconds (JVM running for 11.662)
+2020-02-18 14:48:33.343 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:48:33.344 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 5 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:33.344 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 5 completed successfully in 0.87 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:33.345 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=21.2 ms, state=CONNECTED}]
+2020-02-18 14:48:43.345 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:48:43.346 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 6 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:43.346 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 6 completed successfully in 1.08 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:43.347 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.3 ms, state=CONNECTED}]
+2020-02-18 14:48:53.347 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:48:53.347 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 7 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:53.348 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 7 completed successfully in 1.00 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:48:53.348 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=14.1 ms, state=CONNECTED}]
+2020-02-18 14:49:03.350 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:49:03.350 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 8 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:03.351 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 8 completed successfully in 0.92 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:03.352 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=11.6 ms, state=CONNECTED}]
+2020-02-18 14:49:13.352 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:49:13.352 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 9 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:13.353 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 9 completed successfully in 0.88 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:13.354 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=9.5 ms, state=CONNECTED}]
+2020-02-18 14:49:23.355 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:49:23.355 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 10 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:23.356 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 10 completed successfully in 0.71 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:23.356 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=7.8 ms, state=CONNECTED}]
+2020-02-18 14:49:28.084 [http-nio-8089-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-18 14:49:28.085 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-18 14:49:28.093 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-02-18 14:49:28.243 [http-nio-8089-exec-2] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2020-02-18 14:49:28.573 [http-nio-8089-exec-2] DEBUG org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Thymeleaf version: 3.0.11.RELEASE (built 2018-10-28T22:35:28+0000)
+[THYMELEAF] * Cache Manager implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template resolvers:
+[THYMELEAF]     * org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers:
+[THYMELEAF]     * org.thymeleaf.spring5.messageresolver.SpringMessageResolver
+[THYMELEAF] * Link builders:
+[THYMELEAF]     * org.thymeleaf.linkbuilder.StandardLinkBuilder
+[THYMELEAF] * Dialect [1 of 3]: SpringStandard (org.thymeleaf.spring5.dialect.SpringStandardDialect)
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include,data-th-include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert,data-th-insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace,data-th-replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:substituteby,data-th-substituteby}] [100]: org.thymeleaf.standard.processor.StandardSubstituteByTagProcessor
+[THYMELEAF]             * [* {th:each,data-th-each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch,data-th-switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case,data-th-case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if,data-th-if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless,data-th-unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object,data-th-object}] [500]: org.thymeleaf.spring5.processor.SpringObjectTagProcessor
+[THYMELEAF]             * [* {th:with,data-th-with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr,data-th-attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend,data-th-attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend,data-th-attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:method,data-th-method}] [990]: org.thymeleaf.spring5.processor.SpringMethodTagProcessor
+[THYMELEAF]             * [* {th:alt-title,data-th-alt-title}] [990]: org.thymeleaf.standard.processor.StandardAltTitleTagProcessor
+[THYMELEAF]             * [* {th:lang-xmllang,data-th-lang-xmllang}] [990]: org.thymeleaf.standard.processor.StandardLangXmlLangTagProcessor
+[THYMELEAF]             * [* {th:action,data-th-action}] [1000]: org.thymeleaf.spring5.processor.SpringActionTagProcessor
+[THYMELEAF]             * [* {th:href,data-th-href}] [1000]: org.thymeleaf.spring5.processor.SpringHrefTagProcessor
+[THYMELEAF]             * [* {th:src,data-th-src}] [1000]: org.thymeleaf.spring5.processor.SpringSrcTagProcessor
+[THYMELEAF]             * [* {th:nowrap,data-th-nowrap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:hidden,data-th-hidden}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:controls,data-th-controls}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:scoped,data-th-scoped}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:async,data-th-async}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:pubdate,data-th-pubdate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autofocus,data-th-autofocus}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:checked,data-th-checked}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:seamless,data-th-seamless}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:novalidate,data-th-novalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:disabled,data-th-disabled}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autoplay,data-th-autoplay}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:loop,data-th-loop}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:defer,data-th-defer}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:reversed,data-th-reversed}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:multiple,data-th-multiple}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:required,data-th-required}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:default,data-th-default}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:open,data-th-open}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:formnovalidate,data-th-formnovalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:selected,data-th-selected}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:declare,data-th-declare}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:readonly,data-th-readonly}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ismap,data-th-ismap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ondragend,data-th-ondragend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onwaiting,data-th-onwaiting}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onerror,data-th-onerror}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstorage,data-th-onstorage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ononline,data-th-ononline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplay,data-th-onplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseup,data-th-onmouseup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadedmetadata,data-th-onloadedmetadata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeypress,data-th-onkeypress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onfocus,data-th-onfocus}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onprogress,data-th-onprogress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onforminput,data-th-onforminput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onemptied,data-th-onemptied}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousemove,data-th-onmousemove}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeunload,data-th-onbeforeunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onblur,data-th-onblur}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onunload,data-th-onunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onchange,data-th-onchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onhashchange,data-th-onhashchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onafterprint,data-th-onafterprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplay,data-th-oncanplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpause,data-th-onpause}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeked,data-th-onseeked}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onvolumechange,data-th-onvolumechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ontimeupdate,data-th-ontimeupdate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadeddata,data-th-onloadeddata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreadystatechange,data-th-onreadystatechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onundo,data-th-onundo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onload,data-th-onload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onratechange,data-th-onratechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsubmit,data-th-onsubmit}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninput,data-th-oninput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninvalid,data-th-oninvalid}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onshow,data-th-onshow}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onresize,data-th-onresize}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onoffline,data-th-onoffline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsuspend,data-th-onsuspend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousedown,data-th-onmousedown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondblclick,data-th-ondblclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrop,data-th-ondrop}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragover,data-th-ondragover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragleave,data-th-ondragleave}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstalled,data-th-onstalled}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseout,data-th-onmouseout}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondurationchange,data-th-ondurationchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncontextmenu,data-th-oncontextmenu}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeydown,data-th-onkeydown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadstart,data-th-onloadstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrag,data-th-ondrag}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeprint,data-th-onbeforeprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmessage,data-th-onmessage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpopstate,data-th-onpopstate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreset,data-th-onreset}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplaying,data-th-onplaying}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplaythrough,data-th-oncanplaythrough}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onscroll,data-th-onscroll}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onabort,data-th-onabort}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseover,data-th-onmouseover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragstart,data-th-ondragstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onended,data-th-onended}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeyup,data-th-onkeyup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousewheel,data-th-onmousewheel}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onselect,data-th-onselect}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onredo,data-th-onredo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onclick,data-th-onclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragenter,data-th-ondragenter}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onformchange,data-th-onformchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeking,data-th-onseeking}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:inline,data-th-inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineHTMLTagProcessor
+[THYMELEAF]             * [* {th:name,data-th-name}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:type,data-th-type}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scheme,data-th-scheme}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept,data-th-accept}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:alt,data-th-alt}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:media,data-th-media}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:spellcheck,data-th-spellcheck}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:archive,data-th-archive}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:lang,data-th-lang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:content,data-th-content}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:challenge,data-th-challenge}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formaction,data-th-formaction}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:style,data-th-style}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept-charset,data-th-accept-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:class,data-th-class}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:keytype,data-th-keytype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:size,data-th-size}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:tabindex,data-th-tabindex}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hspace,data-th-hspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formtarget,data-th-formtarget}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:valuetype,data-th-valuetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:enctype,data-th-enctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:id,data-th-id}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formenctype,data-th-formenctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:background,data-th-background}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:classid,data-th-classid}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:preload,data-th-preload}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codetype,data-th-codetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellpadding,data-th-cellpadding}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:datetime,data-th-datetime}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:longdesc,data-th-longdesc}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:charset,data-th-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:summary,data-th-summary}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:placeholder,data-th-placeholder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accesskey,data-th-accesskey}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scrolling,data-th-scrolling}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:colspan,data-th-colspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:kind,data-th-kind}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:poster,data-th-poster}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:optimum,data-th-optimum}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:for,data-th-for}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dropzone,data-th-dropzone}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:title,data-th-title}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:axis,data-th-axis}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codebase,data-th-codebase}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:start,data-th-start}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:label,data-th-label}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formmethod,data-th-formmethod}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:max,data-th-max}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scope,data-th-scope}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contenteditable,data-th-contenteditable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:span,data-th-span}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:wrap,data-th-wrap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:abbr,data-th-abbr}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:width,data-th-width}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frame,data-th-frame}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rules,data-th-rules}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:usemap,data-th-usemap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:maxlength,data-th-maxlength}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:headers,data-th-headers}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:height,data-th-height}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:low,data-th-low}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:min,data-th-min}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cols,data-th-cols}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:radiogroup,data-th-radiogroup}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rows,data-th-rows}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:bgcolor,data-th-bgcolor}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:srclang,data-th-srclang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rev,data-th-rev}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:vspace,data-th-vspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contextmenu,data-th-contextmenu}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginwidth,data-th-marginwidth}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sizes,data-th-sizes}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:http-equiv,data-th-http-equiv}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:data,data-th-data}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:manifest,data-th-manifest}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rowspan,data-th-rowspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sandbox,data-th-sandbox}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hreflang,data-th-hreflang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:icon,data-th-icon}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:step,data-th-step}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:list,data-th-list}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginheight,data-th-marginheight}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cite,data-th-cite}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:standby,data-th-standby}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:form,data-th-form}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:audio,data-th-audio}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frameborder,data-th-frameborder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:pattern,data-th-pattern}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dir,data-th-dir}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:autocomplete,data-th-autocomplete}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:draggable,data-th-draggable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellspacing,data-th-cellspacing}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:align,data-th-align}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:border,data-th-border}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:high,data-th-high}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:compact,data-th-compact}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:target,data-th-target}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rel,data-th-rel}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:xmlbase,data-th-xmlbase}] [1000]: org.thymeleaf.standard.processor.StandardXmlBaseTagProcessor
+[THYMELEAF]             * [* {th:xmllang,data-th-xmllang}] [1000]: org.thymeleaf.standard.processor.StandardXmlLangTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:xmlspace,data-th-xmlspace}] [1000]: org.thymeleaf.standard.processor.StandardXmlSpaceTagProcessor
+[THYMELEAF]             * [{option} *] [1005]: org.thymeleaf.spring5.processor.SpringOptionInSelectFieldTagProcessor
+[THYMELEAF]             * [* {th:value,data-th-value}] [1010]: org.thymeleaf.spring5.processor.SpringValueTagProcessor
+[THYMELEAF]             * [* {th:classappend,data-th-classappend}] [1100]: org.thymeleaf.standard.processor.StandardClassappendTagProcessor
+[THYMELEAF]             * [* {th:styleappend,data-th-styleappend}] [1100]: org.thymeleaf.standard.processor.StandardStyleappendTagProcessor
+[THYMELEAF]             * [* {th:text,data-th-text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext,data-th-utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment,data-th-fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert,data-th-assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove,data-th-remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:errors,data-th-errors}] [1700]: org.thymeleaf.spring5.processor.SpringErrorsTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputCheckboxFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputFileFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputPasswordFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputRadioFieldTagProcessor
+[THYMELEAF]             * [{option} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringOptionFieldTagProcessor
+[THYMELEAF]             * [{select} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor
+[THYMELEAF]             * [{textarea} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringTextareaFieldTagProcessor
+[THYMELEAF]             * [* {th:uerrors,data-th-uerrors}] [1700]: org.thymeleaf.spring5.processor.SpringUErrorsTagProcessor
+[THYMELEAF]             * [* {th:errorclass,data-th-errorclass}] [1800]: org.thymeleaf.spring5.processor.SpringErrorClassTagProcessor
+[THYMELEAF]             * [* {th:ref,data-th-ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block,th-block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * DOCTYPE Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardTranslationDocTypeProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]             * [1100]: org.thymeleaf.standard.processor.StandardConditionalCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:substituteby}] [100]: org.thymeleaf.standard.processor.StandardSubstituteByTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineXMLTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #ctx
+[THYMELEAF]         * #root
+[THYMELEAF]         * #vars
+[THYMELEAF]         * #object
+[THYMELEAF]         * #locale
+[THYMELEAF]         * #request
+[THYMELEAF]         * #response
+[THYMELEAF]         * #session
+[THYMELEAF]         * #servletContext
+[THYMELEAF]         * #conversions
+[THYMELEAF]         * #uris
+[THYMELEAF]         * #calendars
+[THYMELEAF]         * #dates
+[THYMELEAF]         * #bools
+[THYMELEAF]         * #numbers
+[THYMELEAF]         * #objects
+[THYMELEAF]         * #strings
+[THYMELEAF]         * #arrays
+[THYMELEAF]         * #lists
+[THYMELEAF]         * #sets
+[THYMELEAF]         * #maps
+[THYMELEAF]         * #aggregates
+[THYMELEAF]         * #messages
+[THYMELEAF]         * #ids
+[THYMELEAF]         * #execInfo
+[THYMELEAF]         * #httpServletRequest
+[THYMELEAF]         * #httpSession
+[THYMELEAF]         * #fields
+[THYMELEAF]         * #themes
+[THYMELEAF]         * #mvc
+[THYMELEAF]         * #requestdatavalues
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]         * "StandardJavaScriptSerializer": org.thymeleaf.standard.serializer.StandardJavaScriptSerializer@21a7365b
+[THYMELEAF]         * "StandardCSSSerializer": org.thymeleaf.standard.serializer.StandardCSSSerializer@1f80d9af
+[THYMELEAF]         * "EnableSpringELCompiler": false
+[THYMELEAF]         * "StandardVariableExpressionEvaluator": SpringEL
+[THYMELEAF]         * "StandardConversionService": org.thymeleaf.spring5.expression.SpringStandardConversionService@4eb1cd5
+[THYMELEAF] * Dialect [2 of 3]: Sys Dialect (com.songhaozhi.mayday.config.thymeleaf.dialect.ThSysDialect)
+[THYMELEAF]     * Prefix: "thSys"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {xmlns:thsys}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {thsys:text,data-thsys-text}] [10000]: com.songhaozhi.mayday.config.thymeleaf.tag.ThSysTagProcessor
+[THYMELEAF] * Dialect [3 of 3]: java8time (org.thymeleaf.extras.java8time.dialect.Java8TimeDialect)
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #temporals
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2020-02-18 14:49:28.574 [http-nio-8089-exec-2] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2020-02-18 14:49:33.359 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:49:33.359 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 11 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:33.360 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 11 completed successfully in 0.71 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:33.360 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=6.5 ms, state=CONNECTED}]
+2020-02-18 14:49:43.360 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:49:43.360 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 12 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:43.361 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 12 completed successfully in 0.75 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:43.362 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=5.4 ms, state=CONNECTED}]
+2020-02-18 14:49:53.364 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:49:53.364 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 13 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:53.365 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 13 completed successfully in 0.71 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:49:53.365 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=4.6 ms, state=CONNECTED}]
+2020-02-18 14:50:03.366 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:50:03.366 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 14 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:03.367 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 14 completed successfully in 0.61 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:03.367 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.9 ms, state=CONNECTED}]
+2020-02-18 14:50:13.368 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:50:13.368 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 15 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:13.369 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 15 completed successfully in 0.71 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:13.369 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.3 ms, state=CONNECTED}]
+2020-02-18 14:50:23.371 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:50:23.374 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 16 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:23.376 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 16 completed successfully in 3.33 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:23.377 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.7 ms, state=CONNECTED}]
+2020-02-18 14:50:33.379 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:50:33.379 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 17 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:33.380 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 17 completed successfully in 0.67 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:33.380 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.1 ms, state=CONNECTED}]
+2020-02-18 14:50:43.381 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:50:43.383 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 18 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:43.384 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 18 completed successfully in 1.96 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:43.385 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.1 ms, state=CONNECTED}]
+2020-02-18 14:50:53.388 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:50:53.390 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 19 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:53.392 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 19 completed successfully in 2.77 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:50:53.393 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.4 ms, state=CONNECTED}]
+2020-02-18 14:51:03.395 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:51:03.396 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 20 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:03.397 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 20 completed successfully in 0.94 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:03.397 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.0 ms, state=CONNECTED}]
+2020-02-18 14:51:13.398 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:51:13.398 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 21 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:13.399 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 21 completed successfully in 0.61 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:13.399 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.6 ms, state=CONNECTED}]
+2020-02-18 14:51:23.401 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:51:23.402 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 22 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:23.403 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 22 completed successfully in 1.51 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:23.403 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.5 ms, state=CONNECTED}]
+2020-02-18 14:51:33.405 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:51:33.407 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 23 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:33.407 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 23 completed successfully in 0.62 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:33.408 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.2 ms, state=CONNECTED}]
+2020-02-18 14:51:43.410 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:51:43.410 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 24 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:43.411 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 24 completed successfully in 0.61 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:43.411 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.9 ms, state=CONNECTED}]
+2020-02-18 14:51:53.412 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:51:53.412 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 25 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:53.413 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 25 completed successfully in 0.79 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:51:53.413 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.8 ms, state=CONNECTED}]
+2020-02-18 14:52:03.415 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:52:03.415 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 26 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:03.416 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 26 completed successfully in 0.63 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:03.416 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2020-02-18 14:52:13.417 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:52:13.417 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 27 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:13.418 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 27 completed successfully in 0.57 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:13.418 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2020-02-18 14:52:23.420 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:52:23.420 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 28 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:23.421 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 28 completed successfully in 0.70 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:23.421 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2020-02-18 14:52:33.422 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:52:33.422 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 29 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:33.423 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 29 completed successfully in 0.60 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:33.423 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.3 ms, state=CONNECTED}]
+2020-02-18 14:52:43.424 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:52:43.424 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 30 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:43.425 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 30 completed successfully in 0.81 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:43.429 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.3 ms, state=CONNECTED}]
+2020-02-18 14:52:53.430 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:52:53.431 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 31 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:53.431 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 31 completed successfully in 0.64 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:52:53.431 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.3 ms, state=CONNECTED}]
+2020-02-18 14:53:02.458 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-02-18 14:53:02.458 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fb93ea9]
+2020-02-18 14:53:02.459 [http-nio-8089-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e5ef229] will be managed by Spring
+2020-02-18 14:53:02.459 [http-nio-8089-exec-4] DEBUG c.s.mayday.mapper.generator.UserMapper.insert - ==>  Preparing: insert into mayday_user (user_id, login_enable, login_error, login_last_time, user_portrait, user_explain, user_display_name, user_email, user_name, user_pwd) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-02-18 14:53:02.459 [http-nio-8089-exec-4] DEBUG c.s.mayday.mapper.generator.UserMapper.insert - ==> Parameters: null, null, null, null, null, null, 许洋(String), 1824650783@qq.com(String), 许洋(String), 62c8ad0a15d9d1ca38d5dee762a16e01(String)
+2020-02-18 14:53:02.469 [http-nio-8089-exec-4] DEBUG c.s.mayday.mapper.generator.UserMapper.insert - <==    Updates: 1
+2020-02-18 14:53:02.470 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fb93ea9]
+2020-02-18 14:53:02.470 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fb93ea9]
+2020-02-18 14:53:02.470 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fb93ea9]
+2020-02-18 14:53:02.470 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fb93ea9]
+2020-02-18 14:53:02.509 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-02-18 14:53:02.509 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3ffac4]
+2020-02-18 14:53:02.509 [http-nio-8089-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2e5ef229] will be managed by Spring
+2020-02-18 14:53:02.509 [http-nio-8089-exec-4] DEBUG c.s.mayday.mapper.generator.LogMapper.insert - ==>  Preparing: insert into mayday_logs (log_id, log_title, log_content, log_ip, log_date) values (?, ?, ?, ?, ?) 
+2020-02-18 14:53:02.511 [http-nio-8089-exec-4] DEBUG c.s.mayday.mapper.generator.LogMapper.insert - ==> Parameters: null, 安装MAYDAY(String), 操作成功(String), 127.0.0.1(String), 2020-02-18 14:53:02.49(Timestamp)
+2020-02-18 14:53:02.515 [http-nio-8089-exec-4] DEBUG c.s.mayday.mapper.generator.LogMapper.insert - <==    Updates: 1
+2020-02-18 14:53:02.515 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3ffac4]
+2020-02-18 14:53:02.515 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3ffac4]
+2020-02-18 14:53:02.515 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3ffac4]
+2020-02-18 14:53:02.515 [http-nio-8089-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3ffac4]
+2020-02-18 14:53:03.432 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:53:03.432 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 32 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:03.433 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 32 completed successfully in 0.54 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:03.433 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.2 ms, state=CONNECTED}]
+2020-02-18 14:53:13.434 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:53:13.436 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 33 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:13.438 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 33 completed successfully in 2.48 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:13.439 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.7 ms, state=CONNECTED}]
+2020-02-18 14:53:23.439 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:53:23.439 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 34 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:23.440 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 34 completed successfully in 0.71 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:23.440 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2020-02-18 14:53:33.443 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:53:33.444 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 35 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:33.444 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 35 completed successfully in 0.94 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:33.445 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2020-02-18 14:53:43.446 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:53:43.446 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 36 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:43.447 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 36 completed successfully in 0.50 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:43.447 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2020-02-18 14:53:53.447 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:53:53.449 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 37 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:53.450 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 37 completed successfully in 1.44 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:53:53.450 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2020-02-18 14:54:03.452 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:54:03.452 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 38 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:03.453 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 38 completed successfully in 0.68 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:03.453 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2020-02-18 14:54:13.455 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:54:13.455 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 39 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:13.456 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 39 completed successfully in 0.67 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:13.456 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2020-02-18 14:54:23.458 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:54:23.458 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 40 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:23.459 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 40 completed successfully in 0.66 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:23.459 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.3 ms, state=CONNECTED}]
+2020-02-18 14:54:33.460 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:54:33.460 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 41 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:33.461 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 41 completed successfully in 0.69 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:33.461 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.3 ms, state=CONNECTED}]
+2020-02-18 14:54:43.463 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:54:43.463 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 42 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:43.464 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 42 completed successfully in 0.55 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:43.464 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.2 ms, state=CONNECTED}]
+2020-02-18 14:54:53.467 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:54:53.467 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 43 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:53.468 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 43 completed successfully in 0.71 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:54:53.468 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.2 ms, state=CONNECTED}]
+2020-02-18 14:55:03.469 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:55:03.469 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 44 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:03.470 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 44 completed successfully in 0.69 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:03.470 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.2 ms, state=CONNECTED}]
+2020-02-18 14:55:13.472 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:55:13.472 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 45 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:13.472 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 45 completed successfully in 0.56 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:13.472 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.1 ms, state=CONNECTED}]
+2020-02-18 14:55:23.474 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:55:23.474 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 46 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:23.475 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 46 completed successfully in 0.66 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:23.475 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.1 ms, state=CONNECTED}]
+2020-02-18 14:55:33.476 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:55:33.476 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 47 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:33.477 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 47 completed successfully in 0.56 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:33.477 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.1 ms, state=CONNECTED}]
+2020-02-18 14:55:43.478 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
+2020-02-18 14:55:43.478 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Sending command '{ "ismaster" : 1, "$db" : "admin" }' with request id 48 to database admin on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:43.479 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 48 completed successfully in 0.52 ms on connection [connectionId{localValue:1, serverValue:19}] to server localhost:27017
+2020-02-18 14:55:43.479 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.0 ms, state=CONNECTED}]
+2020-02-18 14:55:44.166 [Thread-29] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-02-18 14:55:44.167 [cluster-ClusterId{value='5e4b88b78560d94c1c01c46f', description='null'}-localhost:27017] DEBUG org.mongodb.driver.connection - Closing connection connectionId{localValue:1, serverValue:19}
+2020-02-18 14:55:44.168 [Thread-29] DEBUG io.lettuce.core.resource.DefaultClientResources - Initiate shutdown (0, 2, SECONDS)
+2020-02-18 14:55:44.169 [Thread-29] DEBUG i.l.core.resource.DefaultEventLoopGroupProvider - Initiate shutdown (0, 2, SECONDS)
+2020-02-18 14:55:44.176 [Thread-29] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-18 14:55:44.181 [Thread-29] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

@@ -1,0 +1,22 @@
+server: 
+  port: 8089
+logging:
+    level: 
+        org.springframework: info
+        data: DEBUG
+        security: DEBUG
+    config: classpath:logback-spring.xml
+spring: 
+  mvc:
+    static-path-pattern: /**
+  thymeleaf: 
+    servlet:
+      content-type: text/html
+    encoding: UTF-8
+    cache: false
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

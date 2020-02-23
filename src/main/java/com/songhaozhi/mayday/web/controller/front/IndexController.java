@@ -12,6 +12,7 @@ import com.songhaozhi.mayday.model.enums.PostType;
 import com.songhaozhi.mayday.model.ry.SysBlog;
 import com.songhaozhi.mayday.model.ry.SysDaily;
 import com.songhaozhi.mayday.model.ry.SysFileInfo;
+import com.songhaozhi.mayday.model.ry.SysSchedule;
 import com.songhaozhi.mayday.service.*;
 import com.songhaozhi.mayday.util.MaydayUtil;
 import com.songhaozhi.mayday.web.controller.admin.BaseController;
@@ -50,6 +51,8 @@ public class IndexController extends BaseController {
 	private SysDailyService dailyService;
 	@Autowired
 	private SysFileInfoService fileInfoService;
+	@Autowired
+	private SysScheduleService scheduleService;
 
 	/**
 	 * 请求首页
@@ -156,6 +159,37 @@ public class IndexController extends BaseController {
 		SysDaily dailyInfo = dailyService.selectDaily(sysDaily);
 		model.addAttribute("dailyInfo", dailyInfo);
 		return this.render("dailyInfo");
+	}
+
+	/**
+	 * 待办 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "schedule")
+	public String schedule(Model model) throws Exception {
+		SysSchedule sysSchedule = new SysSchedule();
+		List<SysSchedule> scheduleList = scheduleService.selectScheduleList(sysSchedule);
+		model.addAttribute("scheduleList", scheduleList);
+		return this.render("schedule");
+	}
+
+	/**
+	 * 日志信息 BY LHY
+	 *
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value = "scheduleInfo/{scheduleId}")
+	public String scheduleInfo(Model model, @PathVariable(value = "scheduleId") String scheduleId) throws Exception {
+		SysSchedule sysSchedule = new SysSchedule();
+		sysSchedule.setScheduleId(scheduleId);
+		SysSchedule scheduleInfo = scheduleService.selectSchedule(sysSchedule);
+		model.addAttribute("scheduleInfo", scheduleInfo);
+		return this.render("scheduleInfo");
 	}
 
 	/**
