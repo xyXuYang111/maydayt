@@ -51,6 +51,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				AND daily_content like concat('%', #{dailyContent}, '%')
 			</if>
 		</where>
+        order by create_time desc
     </select>
     
     <select id="checkDailyKeyUnique" parameterType="String" resultMap="SysDailyResult">

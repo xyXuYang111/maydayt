@@ -40,6 +40,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				and file_type_id in (${typeId})
 			</if>
 		</trim>
+		order by create_time desc
 	</select>
 
 	<insert id="insertFile" parameterType="SysFileInfo">
