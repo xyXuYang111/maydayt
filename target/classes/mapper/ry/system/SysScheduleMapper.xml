@@ -66,6 +66,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				AND schedule_desc like concat('%', #{scheduleDesc}, '%')
 			</if>
 		</where>
+        order by create_time desc
     </select>
     
     <select id="checkScheduleKeyUnique" parameterType="String" resultMap="SysScheduleResult">
